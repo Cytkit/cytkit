@@ -46,6 +46,7 @@ Apart from the 3D printed parts, Cytkit requires a set of specialised components
 1. [Quartz cuvette or thick-walled capillary](fluidic/cuvette.md){qty:1, cat:fluidics}
 1. [Pressure-resistant bottle](fluidic/pressure_resistant_bottle.md){qty:1, cat:fluidics}
 1. [Peek tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md){qty:1, cat:fluidics}
+1. [Nitrile black O-rings ID 1mm CS 1mm](fluidic/o-rings.md){qty:2, cat:fluidics}
 
 ## Source the electronic components
 

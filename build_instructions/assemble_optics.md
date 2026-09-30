@@ -1,22 +1,28 @@
 # Assemble the optics
 
-*** picture of optics before assembly
 
-## Insert spectrum focusing lens {pagestep}
-
-## Insert SSC focusing lens  {pagestep}
-
-## Insert coloured glass filter  {pagestep}
-
-## Insert dichroic filters  {pagestep}
-
-## Insert condensing lens {pagestep}
-
-## Assemble beam shaping assembly  {pagestep}
 
 ## Assemble laser module  {pagestep}
 
-## Assemble camera module  {pagestep}
+## Assemble and mount beam shaping assembly  {pagestep}
+
+## Insert condensing lens {pagestep}
+
+## Insert cylindrical correction lens (optional) {pagestep}
+
+## Insert neutral density filter {pagestep}
+
+## Insert dichroic and/or coloured glass filters  {pagestep}
+
+## Insert SSC focusing lens  {pagestep}
+
+## Insert grating  {pagestep}
+
+## Insert spectrum focusing lens {pagestep}
+
+## Assemble and mount camera module  {pagestep}
+
+## Assemble and mount LED flash calibration tool {pagestep}
 
 ## Mount detectors  {pagestep}
 
