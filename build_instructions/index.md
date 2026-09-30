@@ -68,7 +68,8 @@ To align and test the instrument, you will need:
 1. [Assemble the mechanical parts](assemble.md){step}
 1. [Assemble the fluidics](assemble_fluidics.md){step}
 1. [Assemble the optics](assemble_optics.md){step}
-1. [Install the electronics](electronics.md){step}
+1. [Install the electronics for Cytkit 1S-1F](electronics1s1f.md){step}
+1. [install the electronics for Cytkit 2S-14F](electronics2s14f.md){step}
 1. [Install and run the software](software.md){step}
 1. [Coarse alignment](coarse_alignment.md){step}
 1. [Fine alignment](fine_alignment.md){step}

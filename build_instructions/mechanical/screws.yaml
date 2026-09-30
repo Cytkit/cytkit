@@ -70,6 +70,18 @@ self_tapping_m3x16_posi:
         Aliexpress:
             PartNo: Black Carbon Steel Phillips Truss Head Screw
             Link: 'https://www.aliexpress.com/item/1005009495394483.html'
+self_tapping_m2.6x6_posi:
+    Name: M2.6 self-tapping posi head screws 6 mm (black)
+    Description: Metric Screw
+    Specs:
+        Material: Carbon Steel (Black)
+        Thread: M2.6
+        Length: 6 mm
+        Cap: Philips/Posi
+    Suppliers:
+        Aliexpress:
+            PartNo: Black Carbon Steel Phillips Truss Head Screw
+            Link: 'https://www.aliexpress.com/item/1005009495394483.html'
 m3_washers:
     Name: M3 washers
     Description: Metric washer

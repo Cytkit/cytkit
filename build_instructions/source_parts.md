@@ -88,7 +88,8 @@ According to the configuration you are building:
 1. [M3 self-tapping posi head screws 8 mm](mechanical/screws.yaml#self_tapping_m3x8_posi){qty:1, cat:mechanics}
 1. [M3 self-tapping posi head screws 10 mm](mechanical/screws.yaml#self_tapping_m3x10_posi){qty:1, cat:mechanics}
 1. [M3 self-tapping posi head screws 12 mm](mechanical/screws.yaml#self_tapping_m3x12_posi){qty:1, cat:mechanics}
-1. [M3 self-tapping posi head screws 16 mm](mechanical/screws.yaml#self_tapping_m3x16_posi){cat:mechanics}
+1. [M3 self-tapping posi head screws 16 mm](mechanical/screws.yaml#self_tapping_m3x16_posi){qty:1, cat:mechanics}
+1. [M2.6 self-tapping posi head screws 6 mm](mechanical/screws.yaml#self_tapping_m2.6x6_posi){qty:1, cat:mechanics}
 1. [M3 washers](mechanical/screws.yaml#m3_washers){qty:1, cat:mechanics}
 1. [Stainless steel compression springs, 0.5 mm wire, 20 mm length, 6 mm diameter](mechanical/springs_20x6x0.5mm.md){qty:1, cat:mechanics}
 1. [Stainless steel extension springs, 0.3 mm wire, 20 mm length, 6 mm diameter](mechanical/extension_springs_20x6x0.3mm.md){qty:1, cat:mechanics}
