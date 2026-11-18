@@ -99,6 +99,6 @@ The following parts should all be printed using a resin printer (e.g. an LCD pri
 
 1. [Sheath chamber](printed/sheath_chamber.md){qty:1, cat:printed_resin}
 1. [Laser collimating lens lock nut](printed/lock_nut.md){qty:1, cat:printed_resin}
-1. [Laser collimating lens lock nut adjustment tool (short)](printed/lock_nut_tool_short.md){qty:1, cat:printed_resin}
-1. [Laser collimating lens lock nut adjustment tool (long)](printed/lock_nut_tool_long.md){qty:1, cat:printed_resin}
+1. [Laser collimating lens adjustment tool (short)](printed/lock_nut_tool_short.md){qty:1, cat:printed_resin}
+1. [Laser collimating lens adjustment tool (long)](printed/lock_nut_tool_long.md){qty:1, cat:printed_resin}
 1. [Camera tube lens](printed/camera_tube_lens.md){qty:1, cat:printed_resin}

@@ -1,7 +1,5 @@
 # Fine alignment
 
-## Mount fluorescence detector {pagestep}
-
 ## Flow alignment beads {pagestep}
 
 ## Align laser (fine) {pagestep}

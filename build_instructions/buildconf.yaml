@@ -28,8 +28,11 @@ CustomCategories:
     DisplayName: Printed parts (resin 3D printer)
     Reuse: false
   safety:
-    Reuse: false
     DisplayName: Safety Equipment
+    Reuse: false
+  test_materials:
+    Reuse: false
+    DisplayName: Test Materials
 Email: hello@cytkit.com
 HoverColor: '#555555'
 License: CERN-OHL-S-2.0

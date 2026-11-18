@@ -1,18 +1,17 @@
-# Electronics: Cytkit model 2S-14F
+# Electronics: Cytkit configuration 2S-14F
 
-## FSC and SSC detectors  {pagestep}
+The Cytkit configuration 2S-14F requires the Astute Devices 16 Channel Cytometry Electronics Set comprises a complete set of  components to build a 2-scatter, 14-fluorescence spectral cytometer, including the control of ancillary electronic components. 
 
-## SiPM array (fluorescence) detector {pagestep}
+We are now building a first production batch. 
 
-## LED flash calibration tool {pagestep}
+Full instructions coming soon.
 
-## Front panel OLED display {pagestep}
+1. FSC and SSC detectors 
+1. SiPM array (fluorescence) detector 
+1. LED flash calibration tool 
+1. Front panel OLED display 
+1. Interlocks and connector boards 
+1. Main board 
+1. Power supply and USB connector 
 
-## Interlocks and connector boards {pagestep}
-
-## Main board {pagestep}
-
-## Power supply and USB connector {pagestep}
-
-
-*** pics after set-up
+![](images/build photos/20260530_113025 electronic components.jpg)

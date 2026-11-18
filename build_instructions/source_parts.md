@@ -64,6 +64,8 @@ According to the configuration you are building:
 1. [Linear Power Supply](electronic/linear_power_supply.md){qty:1, cat:electronics1s1f}
 1. [Laboratory Power Supply](electronic/laboratory_power_supply.md){qty:1, cat:electronics1s1f}
 1. [USB camera module](electronic/camera.md){qty:1, cat:electronics1s1f}
+1. (Optional) [3mm F3 round white LED](electronic/f3_led.md){qty:1, cat:electronics1s1f}
+1. (Optional) [16k resistor](electronic/16k_resistor.md){qty:1, cat:electronics1s1f}
 
 ### For the Cytkit 2S-14F configuration:
 
@@ -94,3 +96,11 @@ According to the configuration you are building:
 1. [Stainless steel compression springs, 0.5 mm wire, 20 mm length, 6 mm diameter](mechanical/springs_20x6x0.5mm.md){qty:1, cat:mechanics}
 1. [Stainless steel extension springs, 0.3 mm wire, 20 mm length, 6 mm diameter](mechanical/extension_springs_20x6x0.3mm.md){qty:1, cat:mechanics}
 1. [M4 thumb screws 10mm](mechanical/m4_thumb_screws.md){qty:3, cat:mechanics}
+1. [M4 hex socket bolt 10mm](mechanical/mechanical/screws.yaml#self_tapping_m4x10_hex_socket){qty:1, cat:mechanics}
+
+## Materials for alignment and testing
+
+It is recommended to obtain the following materials for alignment and testing.
+
+1. [Bright green fluorescent alignment beads](test_materials/spherotech8peak.md){qty:1, cat:test_materials}
+1. [Spherotech 8-peak Rainbow Beads RCP-30-5A](test_materials/spherotech8peak.md){qty:1, cat:test_materials}
