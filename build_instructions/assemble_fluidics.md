@@ -18,6 +18,8 @@ Second, insert the o-rings at either end within the o-ring grooves. If handled g
 
 Thirdly flex the flow cell slightly as shown below to insert the cuvette between the o-rings. Tip: if using a square cuvette, you should be able to see through the cuvette side (with a magnifying glass) that the o-ring is sealing against the surface.
 
+>i The flow cell accepts either a 4-mm round thick-walled capillary or a 4-mm square section cuvette. The round capillary has higher performance in fluorescence collection (less total internal reflection), but the cuvette has higher performance in FSC/SSC (lower scattering as the beam enters and exits the quartz).
+
 ![](images/build photos/20260530_131204 flow cell.jpg)
 ![](images/build photos/20260814_111001 see o-ring through cuvette.jpg)
 ![](images/build diagrams/20260515_145654 sealing surface.jpg)

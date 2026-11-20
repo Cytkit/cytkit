@@ -102,5 +102,6 @@ According to the configuration you are building:
 
 It is recommended to obtain the following materials for alignment and testing.
 
-1. [Bright green fluorescent alignment beads](test_materials/spherotech8peak.md){qty:1, cat:test_materials}
+1. [Bright green fluorescent alignment beads](test_materials/alignment_beads.md){qty:1, cat:test_materials}
 1. [Spherotech 8-peak Rainbow Beads RCP-30-5A](test_materials/spherotech8peak.md){qty:1, cat:test_materials}
+1. [5 mL flow cytometry test tubes](test_materials/test_tubes.md){qty:10, cat:test_materials}

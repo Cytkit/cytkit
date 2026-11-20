@@ -18,7 +18,7 @@ It is advisable to perform the coarse alignment wearing laser safety glasses tha
 
 ## Focus camera on cuvette channel {pagestep}
 
-Move the camera to focus on the inner channel within the cuvette. You can use your host PC's USB camera software, or the Cytkit Hardware > Alignment Camera tab within Honeychrome. You may need to adjust the exposure and brightness to see a clear image. Start with the camera tube lens screwed in fully, then turn the camera lens one revolution anticlockwise. Then move the camera in xy to an approximate focus and screw the camera down. Finally turn the camera focus slightly to improve the image. You should see an image like the one below.
+Move the camera to focus on the inner channel within the cuvette. You can use your host PC's USB camera software, or the Cytkit Hardware > Alignment Camera tab within Honeychrome. You may need to adjust the exposure and brightness to see a clear image. Start with the camera tube lens screwed in fully, then turn the camera lens one revolution anticlockwise. Then move the camera in xy to an approximate focus and screw the camera down. Finally turn the camera focus slightly to improve the image. You should see an image like the one below. Depending on whether you are using a round capillary or a square-section cuvette, it will look either blurry (like this, due to astigmatism in the round capillary) or sharp. 
 
 ![](images/build screenshots/Screenshot from 2026-11-18 13-39-28.png)
 
@@ -69,7 +69,7 @@ You should now be able to bring the laser to a focus within the camera image by 
 
 ## Flow fluorescein solution (optional) {pagestep}
 
-You can visualise the laser focus by flowing a dilute solution of fluorescein through the sample SIP. This allows direct visualisation of the spectrum on the array of detectors. 
+You can visualise the laser focus by flowing a dilute solution of fluorescein through the sample SIP. This allows direct visualisation of the spectrum on the array of detectors. Fill your sheath tank first with some suitable sheath fluid (e.g. deionised water or phosphate buffered saline). Dilute fluorescein in water (10 mg/mL) and put in a [5 mL flow cytometry test tube](test_materials/test_tube.md){cat:"test_materials"}.
 
 Switch on the sheath flow:
 
@@ -97,5 +97,14 @@ Wash out well with sheath fluid before moving on, as residual fluorescein create
 Place the fluorescence compartment cap in place.
 
 ![](images/build photos/alignment/20261118_141507.jpg)
+
+## Mount instrument cover (Cytkit 2S14F only) {pagestep}
+
+If you are building the Cytkit configuration 2S14F, you may now put on the instrument cover and enable the interlock again.
+
+If you are building the Cytkit configuration 1S1F, do not place the instrument cover yet, as it must be off to access the FSC alignment in the next step.
+
+
+
 
 You are now ready to move on to fine alignment.

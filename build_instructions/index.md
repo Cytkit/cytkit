@@ -6,7 +6,7 @@ The Cytkit instrument comprises: one laser, beam-shaping optics, a fluidic syste
  
 # Cytkit configurations
 
-You can configure your Cytkit with various detectors and acquisition electronics. These instructions cover two configurations as follows. 
+You can configure your Cytkit with various detectors and acquisition electronics. These instructions cover two configurations as follows. There are many detectors and acquisition systems out there. We hope the community will try other products with Cytkit and share their builds!
 
 ## Cytkit 1S-1F
 

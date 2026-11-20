@@ -8,9 +8,11 @@ The Honeychrome package can be downloaded for Windows, MacOS or Linux, run from 
 
 ![https://honeychrome.cytkit.com/](images/build photos/Screenshot from 2026-11-09 23-39-47.png)
 
-## Optional: install Picoscope software (Cytkit configuration 1S-1F only)  {pagestep}
+## Install Picoscope software (Cytkit configuration 1S-1F only)  {pagestep}
 
-The Picoscope software (Picoscope 7) for the Picoscope 5000 series oscilloscope can be downloaded from [picotech.com](https://picotech.com). For the Cytkit configuration 1S-1F only, it is useful in the exploration and recording of data from the oscilloscope. It cannot be run simulataneously with the Honeychrome app.
+Honeychrome includes a driver to acquire data from a Cytkit 1S-1F using the Picoscope 5000 series oscilloscope. However this requires the separate download and installation of the [PicoSDK from Pico Technology](https://www.picotech.com/library/our-oscilloscope-software-development-kit-sdk).
+
+In addition, for the Cytkit configuration 1S-1F only, it is recommended to install the Picoscope software (Picoscope 7) for the Picoscope 5000 series oscilloscope can be downloaded from [picotech.com](https://picotech.com). It is useful in the exploration and recording of data from the oscilloscope. It cannot be run simultaneously with the Honeychrome app.
 
 ## Connect to hardware and run Honeychrome  {pagestep}
 
