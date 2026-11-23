@@ -4,36 +4,21 @@
 __Your open-source spectral cytometry sidekick__ 
 
 ## Introduction
-This project was started by Samson Rogers to bring a low-cost open-source cytometer design to the cytometry community. Thanks also to Oliver Burton for contributing to the specification and Stuart Vant for starting the electronics development. The inspiration came from the Open Cytometry Hardware workshop by David Novo at CYTO 2024 in Edinburgh, and also from the OpenFlexure Microscope project by Richard Bowman and others. Thanks to many friends and colleagues for friendly advice!
+See the project website at [cytkit.com](https://cytkit.com) to learn about this project. 
 
 Aim: to build a highly useful and accessible cytometry analyser:
-- Useful for technology developers 
-- Useful for laboratory hackers
+- Useful for technology developers and laboratory hackers
 - Useful for resource-limited labs
 - Useful for teaching flow cytometry
 - Useful for all cell biologists
 
-Through this project, I hope to: 
-- Help build the open source cytometry hardware community
-- Release a simple design that is highly accessible for others to modify and build on
-- Share knowledge for building cytometers and new cytometry technology
+The design is now v1.0 and contains all mechanical parts, an optical model, and a bill of materials. Two configurations are included: Cytkit 1S-1F using entirely off-the-shelf electronics (one scatter, one fluorescence), and Cytkit 2S-14F which uses the 16-channel cytometry electronics set of our spin-out-company Astute Devices.
 
-The design is currently labelled v0.3 and contains all mechanical parts, an optical model, and a bill of materials. Initial testing of the released system is underway in conjunction with commercial photodetectors, external data acquisition hardware and offline analysis, and shows that the system is capable of resolving 8 peak rainbow beads. 
-
-To complete the design, the following additions are planned:
-- PCBs for forward scatter, side scatter and fluorescence, data acquisition and fluidics control
-- embedded software for peak detection
-- host PC software for data acquisition, simple analysis, control of the instrument, and export of cytometry data
-
-The bill of materials including all current parts as well as an estimation of the planned electronics currently comes to about $3k. 
-
-Please [get in touch with me](https://www.linkedin.com/in/salmanrogers/) if you are:
+Please [get in touch](https://cytkit.com/contact) if you are:
 - interested in contributing
 - interested in buying a kit
 - interested in requesting our expertise
 - interested in anything else!
-
-![Cytkit CAD render](/Presentation%20materials/cytkit%200.3%20transparent.png)
 
 ## License
 This project is released under the CERN Open Hardware Licence Version 2 - Strongly Reciprocal [CERN-OHL-S](https://opensource.org/license/cern-ohl-s). 
@@ -60,29 +45,20 @@ The cytometry is based on a single laser plus an spectral array of solid-state d
 
 __Why?__
 
-- Skilled cytometrists can currently measure ~10 fluorophores on a 488 nm laser alone
+- Skilled cytometrists can currently measure up to 10 fluorophores on a 488 nm laser alone
 - Take advantage of low-cost reagents for the 488 nm laser
 - Take advantage of available low-cost parts: SiPMs plus dispersion element rather than many expensive filters
 - Such a design can be mechanically simple, allowing fully 3D printed mechanics, simple assembly, adjustment and alignment
 
-![Cytkit cytometry spec](/Presentation%20materials/Burton%2010-colours%20on%20488.png)
-
 ## Source files
-The full mechanical design has been built with FreeCAD and is provided in [CAD and optical model/Cytkit model 0.32.FCStd](/CAD%20and%20optical%20model/Cytkit%20model%200.32.FCStd)
+The full mechanical design has been built with FreeCAD and is provided in [CAD and optical model/Cytkit master assembly.FCStd](/CAD%20and%20optical%20model/Cytkit%20master%20assembly.FCStd)
 
-The optical model has been built in the FreeCAD Optical Design Workbench and is provided in [Cytkit model 0.31 12may25 optics only.FCStd](/CAD%20and%20optical%20model/Cytkit%20model%200.31%2012may25%20optics%20only.FCStd)
+The optical model has been built in the FreeCAD Optical Design Workbench and is provided in [main body with optics.FCStd](/CAD%20and%20optical%20model/main%20body%20with%20optics.FCStd)
 
-STL files for 3D printing (FDM) are provided in [STL files for printing](/STL%20files%20for%20printing).
+STL files for 3D printing and the Bill of Materials are provided in the build instructions, compiled with Gitbuilding.
 
-The Bill of Materials including suppliers of parts is provided in [Cytkit Bill of Materials v0.3.ods](/Cytkit%20Bill%20of%20Materials%20v0.3.ods).
-
-## To do
-- Present the project at CYTO 2025 in Denver
-- Write complete documentation for 3D printing, assembly, alignment and maintenance
-- Provide electronics PCBs and connectors
-- Provide software (embedded and host PC)
-- Provide kits on demand
-- Build a business to make this project rewarding for collaborators
+## Credits
+This project was started by Samson Rogers to bring a low-cost open-source cytometer design to the cytometry community. Oliver Burton has contributing to the specification and built much of the software Honeychrome included many advanced analysis features. Catherine Vant has designed the electronics. The inspiration came from the Open Cytometry Hardware workshop by David Novo at CYTO 2024 in Edinburgh, and also from the OpenFlexure Microscope project led by Richard Bowman. The project is also dedicated to the memory of Howard Shapiro, whose biggest aim was to popularise open cytometry hardware. Thanks to many friends and colleagues for friendly advice!
 
 ## Safety
-**Note that lasers, such as the one listed in the Bill of Materials are hazardous to the eyes. Direct exposure could cause permanent eye damage. Please do not build this design without adequate laser safety training.**
+**Note that lasers, such as the one listed in the Bill of Materials are hazardous to the eyes. Direct exposure could cause permanent eye damage. You are strenuously advised to have laser safety training before building your own Cytkit.**
