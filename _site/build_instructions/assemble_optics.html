@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Untitled project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../static/Logo/favicon.ico" />
+<link rel="icon" type="image/png" href="../static/Logo/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../static/Logo/favicon-16x16.png" sizes="16x16" />
+
+    <link href="../static/base-style.css" rel="stylesheet">
+    <link href="../static/site-style.css" rel="stylesheet">
+                    
+        <script type="text/javascript" src="../static/search.js" defer=""></script>
+    </head>
+<body>
+<header class="site-header">
+    <div class="wrapper header-wrapper" >
+        <div class=header-text>
+   
+    <h1 class="site-title">Untitled project</h1>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="../">
+        Untitled project
+    </a>
+</li>
+<li id="nav-search" :class="focused && searchTerm.length > 0 ? 'search-result-popout' : 'search'" v-scope v-on:vue:mounted="mounted('../')">
+  <input
+    type="text"
+    placeholder="Search..."
+    v-on:input="search($event.target.value)"
+    v-on:keypress="handleKeyPress"
+    v-on:keyup.esc="$event.target.blur()"
+    v-on:focus="handleFocus"
+    v-on:blur="handleBlur"
+    :value="searchTerm" />
+    <div class="search-results" v-if="focused && searchTerm.length > 0">
+        <div v-if="searchResults.length > 0">Results:</div>
+        <div v-if="searchResults.length === 0">No results.</div>
+        <template v-for="(result, index) in searchResults">
+            <li>
+                <a class="search-result" :href="`../${result.path}.html`">
+               <span v-for="crumb in result.breadCrumbs.slice(0, -1)">
+                ${crumb + ' > '}
+                </span>
+               ${result.title || result.breadCrumbs[result.breadCrumbs.length - 1]}
+                <p>
+                    <span v-for="node in result.highlightChars" :class="node.mark ? 'highlight' : ''" >${node.chars}</span>
+                </p>
+                </a>
+            </li>
+        </template>
+    </div>
+</li>
+<li class="active">
+    <a class="active" href="../build_instructions/index.html">
+        Cytkit
+    </a>
+        <ul class="sub-nav-list">
+                <li>
+            <a class="not-active" href="../build_instructions/index_BOM.html">
+                Bill of Materials
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/print_parts.html">
+                Print the mechanical parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/source_parts.html">
+                Source the optical, electronic, fluidic and mechanical components
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/assemble.html">
+                Assemble the mechanics
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/assemble_fluidics.html">
+                Assemble the fluidics
+            </a>
+        </li>
+                <li>
+            <a class="active" href="../build_instructions/assemble_optics.html">
+                Assemble the optics
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/electronics1s1f.html">
+                Electronics: Cytkit configuration 1S-1F
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/electronics2s14f.html">
+                Electronics: Cytkit configuration 2S-14F
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/software.html">
+                Install and run the software
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/coarse_alignment.html">
+                Coarse alignment
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/fine_alignment.html">
+                Fine alignment
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/test_cytometer.html">
+                Test your Cytkit cytometer
+            </a>
+        </li>
+            </ul>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="assemble-the-optics">Assemble the optics</h1>
+<div class="caution-block">
+<p><strong>Caution</strong> </p>
+<p>Wear gloves to handle optics! The human hand is never clean enough to touch a lens or filter. Don't contaminate them with fingerprints.</p>
+<p>You can use plastic tweezers to handle the glass optical elements. Don't use metal tweezers as they risk scratching or chipping the glass.</p>
+</div>
+<h2 class="page-step" id="assemble-laser-holder-and-module">Step 1: Assemble laser holder and module</h2>
+<p>First cut of the brims and support tab of the printed <a href="printed/laser_holder.html" title="">Laser holder</a> as shown. </p>
+<p>Second, attach the <a href="optical/laser_heatsink.html">Laser heatsink</a> to the laser holder with 4x <a href="mechanical/screws/self_tapping_m3x10_posi.html">M3 self-tapping posi head screws 10 mm</a></p>
+<p>Third, screw the M9 mounted <a href="optical/laser_collimating_lens.html">Laser collimating lens</a> into the internal thread at the front of the <a href="optical/laser_module.html">488 nm laser module</a> . About 2 mm of the threaded mount should be poking out from the laser module.</p>
+<p>Fourth, insert the <a href="printed/lock_nut_tool_short.html" title="">Laser collimating lens adjustment tool (short)</a> through the <a href="printed/lock_nut.html">Laser collimating lens lock nut</a> so that its two teeth stick out on the side facing the mounted laser collimating lens. </p>
+<p>Fifth, using the tool to stop the laser collimating lens from rotating, rotate the lock nut onto the mounted laser collimating lens until it gently locks against the body of the laser module, as shown.</p>
+<p>Sixth, insert the laser module into the laser heatsink and tighten the two retaining screws gently.</p>
+<p>Seventh, attach the laser module to the <a href="printed/main_body.html" title="">Main body</a> with 2x <a href="mechanical/screws/self_tapping_m3x16_posi.html">M3 self-tapping posi head screws 16 mm</a> at the front of the module, and 1x <a href="mechanical/screws/self_tapping_m3x25_hex_socket.html">M3 self-tapping hex socket cap screws 25 mm</a> with 1x <a href="mechanical/springs_20x6x0.5mm.html">Stainless steel compression springs, 0.5 mm wire, 20 mm length, 6 mm diameter</a> at the adjustment arm at the back of the module.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build diagrams/optics/laser assembly annotated.png" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build photos/20260530_150922 assemble laser collimating lens.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build photos/20260530_151240 assembled laser module.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build photos/20260530_151545 attach laser assembly.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show0" src="images/build diagrams/optics/laser assembly annotated.png" alt=""/></div>
+<h2 class="page-step" id="assemble-and-mount-beam-shaping-assembly">Step 2: Assemble and mount beam shaping assembly</h2>
+<p>The beam shaping assembly comprises three optical components: <a href="optical/laser_focus_lens_spherical.html">Laser focus lens spherical</a>,  <a href="optical/laser_focus_lens_cylindrical.html">Laser focus lens cylindrical</a> and <a href="optical/band_pass_dichroic.html">Band pass dichroic filter</a> which are all mounted onto the single <a href="printed/foc_lens_holder.html">Focusing lens holder</a>. The holder has a non zero angle of the bandpass dichroic filter to reduce reflections into the laser diode.</p>
+<p>Firstly insert the components carefully into the focusing lens holder as shown. </p>
+<p>Secondly, attach the beam shaping assembly to the <a href="printed/main_body.html" title="">Main body</a> with 1x <a href="mechanical/screws/self_tapping_m3x8_posi.html">M3 self-tapping posi head screws 8 mm</a>. The screw attaches to the raised screw hole in the main body's laser alignment XY flexure stage through the slot on the focusing lens holder. Take care when tightening the screw: make it just tight enough to stop the holder moving, not so tight that it damages the 3D printed layers on the XY stage's screw hole.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/build diagrams/optics/focus lens holder assembly annotated.png" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/build diagrams/optics/beam shaping assm to xy stage.png" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/build photos/20260530_150506 beam shaping assembly.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/build photos/20260530_150647 beam shaping assembly 2.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show1" src="images/build diagrams/optics/focus lens holder assembly annotated.png" alt=""/></div>
+<h2 class="page-step" id="insert-condensing-lens">Step 3: Insert condensing lens</h2>
+<p>First insert the <a href="optical/condensing_lens.html">Condensing lens</a> into the <a href="printed/condensing_lens_holder.html">Condensing lens holder</a>.</p>
+<p>Second screw this assembly only the main body's condensing lens XY flexure stage using 1x <a href="mechanical/screws/self_tapping_m3x8_posi.html">M3 self-tapping posi head screws 8 mm</a>.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/build diagrams/optics/condensing lens assembly.png" alt="" />
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/build photos/20260530_145457 aspherical condenser lens assm.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/build diagrams/optics/condensing lens to main body.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show2" src="images/build diagrams/optics/condensing lens assembly.png" alt=""/></div>
+<h2 class="page-step" id="insert-cylindrical-correction-lens-only-if-using-cylindrical-capillary">Step 4: Insert cylindrical correction lens (only if using cylindrical capillary)</h2>
+<div class="info-block">
+<p>Ignore this step if using a square-section cuvette.</p>
+</div>
+<p>First insert the <a href="optical/cylindrical_correction_lens.html">Cylindrical correction lens</a> into its <a href="printed/correction_cyl_lens_holder.html">Correction cylindrical lens holder</a>.</p>
+<p>Second screw onto the main body (fitting on the screwhole in the arm of the condensing lens XY flexure stage) with 1x <a href="mechanical/screws/self_tapping_m3x8_posi.html">M3 self-tapping posi head screws 8 mm</a>.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show3').src=this.src" src="images/build diagrams/optics/correction cylindrical assembly.png" alt="" />
+    <img onmouseover="getElementById('gallery-show3').src=this.src" src="images/build diagrams/optics/correction cyl to main body assm.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show3" src="images/build diagrams/optics/correction cylindrical assembly.png" alt=""/></div>
+
+<h2 class="page-step" id="insert-neutral-density-filter">Step 5: Insert neutral density filter</h2>
+<p>First insert the <a href="optical/nd_filter.html">Neutral density filter</a> into the <a href="printed/nd_filter_holder.html">ND filter holder for FSC</a>.</p>
+<p>Second screw the holder into the main body on the screw hole opposite the laser as shown, with  1x <a href="mechanical/screws/self_tapping_m3x12_posi.html">M3 self-tapping posi head screws 12 mm</a>.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show4').src=this.src" src="images/build diagrams/optics/nd filter assembly.png" alt="" />
+    <img onmouseover="getElementById('gallery-show4').src=this.src" src="images/build diagrams/optics/attach nd filter assm.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show4" src="images/build diagrams/optics/nd filter assembly.png" alt=""/></div>
+
+<h2 class="page-step" id="insert-dichroic-andor-coloured-glass-filters">Step 6: Insert dichroic and/or coloured glass filters</h2>
+<div class="info-block">
+<p>Here you have options depending on your budget. High performing spectral filters cost money. To achieve good sensitivity, one needs a high optical density removal of the laser light at 488 nm (ideally OD &gt; 6) while letting through light in the band of sensitivity of the detectors, say 500 to 900 nm. </p>
+<p>The cheap option involves stacking a low-cost dichroic filter with a coloured glass filter. For less than USD 50 from Far-East suppliers (or about USD 200 from the major optics catalogue companies), you can have filters that achieve good sensitivity from about 520 nm upwards. However this loses the difference between the blue emitting fluorophores such as FITC, GFP and BB515.</p>
+<p>For higher budgets, you can have a single dichroic filter here that achieves high blocking of the laser light while being substantially transparent at 500 nm and upwards. The well known quality suppliers are listed <a href="optical/dichroic_longpass.html" title="">here</a>. </p>
+</div>
+<p>The <a href="optical/dichroic_longpass.html">Dichroic longpass filter at 0 degrees</a> should have its coated surface facing the light source. Establish which surface this is by inspecting the edges of the filter with a loupe.</p>
+<p>Insert the dichroic longpass filter and / or <a href="optical/coloured_glass_longpass.html">Coloured glass longpass filter</a> into their respective holders. Depending on size, the following filter holders are available:</p>
+<ul>
+<li><a href="printed/circular_filter_holder_34mm_diameter.html">Circular filter holder (34mm diameter)</a></li>
+<li><a href="printed/circular_filter_holder_25mm_diameter.html">Circular filter holder (25mm diameter)</a></li>
+<li><a href="printed/circular_filter_holder_15mm_diameter.html">Circular filter holder (15mm diameter)</a></li>
+<li><a href="printed/rectangular_filter_holder.html">Rectangular filter holder (25.5x26mm)</a></li>
+</ul>
+<p>Then attach each filter holder to the main body as shown using 1x <a href="mechanical/screws/self_tapping_m3x12_posi.html">M3 self-tapping posi head screws 12 mm</a>.</p>
+<div class="info-block">
+<p>If using a combination of a dichroic filter and a coloured glass filter, the dichroic should always be before the coloured glass in the optical train, to minimise the background fluorescence caused by the laser light in the coloured glass filter.</p>
+</div>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show5').src=this.src" src="images/build diagrams/optics/filter assembly.png" alt="" />
+    <img onmouseover="getElementById('gallery-show5').src=this.src" src="images/build diagrams/optics/attach filter holders to main body.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show5" src="images/build diagrams/optics/filter assembly.png" alt=""/></div>
+
+<h2 class="page-step" id="insert-ssc-focusing-lens">Step 7: Insert SSC focusing lens</h2>
+<p>First insert the <a href="optical/ssc_focusing_lens.html">SSC focusing lens</a> into the <a href="printed/ssc_focus_lens_holder.html">SSC focusing lens holder</a>.</p>
+<p>Second attach the SSC lens holder to the main body as shown with 1x <a href="mechanical/screws/self_tapping_m3x12_posi.html">M3 self-tapping posi head screws 12 mm</a>. The space here is very limited for fingers, therefore it is recommended to use plastic tweezers for this step.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show6').src=this.src" src="images/build diagrams/optics/ssc lens assembly.png" alt="" />
+    <img onmouseover="getElementById('gallery-show6').src=this.src" src="images/build diagrams/optics/attach ssc to main body.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show6" src="images/build diagrams/optics/ssc lens assembly.png" alt=""/></div>
+<h2 class="page-step" id="insert-grating">Step 8: Insert grating</h2>
+<p>First insert the <a href="optical/blazed_reflection_grating.html">Blazed reflection grating</a> in the <a href="printed/grating_holder.html">Grating holder</a>. Make sure the arrow showing the blaze direction is pointing as shown.</p>
+<p>Second attach the grating holder to the main body using 2x <a href="mechanical/screws/self_tapping_m3x12_posi.html">M3 self-tapping posi head screws 12 mm</a> as shown.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show7').src=this.src" src="images/build diagrams/optics/grating assembly.png" alt="" />
+    <img onmouseover="getElementById('gallery-show7').src=this.src" src="images/build diagrams/optics/attach grating.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show7" src="images/build diagrams/optics/grating assembly.png" alt=""/></div>
+<h2 class="page-step" id="insert-spectrum-focusing-lens">Step 9: Insert spectrum focusing lens</h2>
+<p>First insert the <a href="optical/spectrum_focusing_lens.html">Spectrum focusing lens</a> in the <a href="printed/spectrum_focus_lens_holder.html">Spectrum focusing lens holder</a>.</p>
+<p>Then attach the holder to the main body using 4x <a href="mechanical/screws/self_tapping_m3x12_posi.html">M3 self-tapping posi head screws 12 mm</a> as shown.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show8').src=this.src" src="images/build diagrams/optics/spectrum focusing lens to holder.png" alt="" />
+    <img onmouseover="getElementById('gallery-show8').src=this.src" src="images/build diagrams/optics/attach spectrum focus lens.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show8" src="images/build diagrams/optics/spectrum focusing lens to holder.png" alt=""/></div>
+
+<h2 class="page-step" id="insert-dichroic-beamsplitter">Step 10: Insert dichroic beamsplitter</h2>
+<div class="caution-block">
+<p>The dichroic beamsplitter (longpass filter at 45 degrees) goes straight into a holder which is part of the main body. Therefore be extremely careful not to break the holder, otherwise you will have to print the main body again!</p>
+</div>
+<p>First establish which surface of the <a href="optical/dichroic_longpass_45.html">Dichroic longpass filter at 45 degrees (beamsplitter)</a> has the coating. You can do this by inspecting the corners of the glass with a loupe. </p>
+<p>With the coated surface facing the condensing lens, insert the beamsplitter into the slots in the main body. Tease it in very carefully! </p>
+<p><img alt="" src="images/build diagrams/optics/insert beamsplitter.png" title="" /></p>
+<h2 class="page-step" id="assemble-and-mount-camera-module">Step 11: Assemble and mount camera module</h2>
+<p>First insert the <a href="optical/laser_blocking_filter.html">5 mm laser blocking filter</a> into the <a href="printed/camera_tube_lens.html">Camera lens tube</a> then the <a href="optical/F7D8_aspherical_lens.html">F7D8 aspherical lens</a> lens on top of the film. Make sure the flatter side of the aspherical lens faces outward.</p>
+<p>Next screw the camera lens tube onto the camera module, leaving about 2 mm before it bottoms out.</p>
+<p>Next screw the camera module onto the camera mount with 4x <a href="mechanical/screws/self_tapping_m2.6x6_posi.html">M2.6 self-tapping posi head screws 6 mm</a>. </p>
+<p>Optionally add vertical adjustment to the camera mount as follows:</p>
+<ol>
+<li>1x<a href="mechanical/springs_20x6x0.5mm.html">Stainless steel compression springs, 0.5 mm wire, 20 mm length, 6 mm diameter</a> in the camera mount between the overhanging tab and the base of the mount.</li>
+<li>1x <a href="mechanical/screws/self_tapping_m3x12_posi.html">M3 self-tapping posi head screws 12 mm</a> through the tab and spring.</li>
+</ol>
+<p>The camera mount can now be adjusted slightly up and down by turning the screw.</p>
+<p>Finally attach the camera mount to the main body with 2x <a href="mechanical/screws/self_tapping_m3x8_posi.html">M3 self-tapping posi head screws 8 mm</a> as shown.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show9').src=this.src" src="images/build diagrams/optics/camera assembly.png" alt="" />
+    <img onmouseover="getElementById('gallery-show9').src=this.src" src="images/build diagrams/optics/attach camera assm.png" alt="" />
+    <img onmouseover="getElementById('gallery-show9').src=this.src" src="images/build photos/20260530_153657 cam lens to tube.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show9').src=this.src" src="images/build photos/20260530_153752 cam tube to module.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show9').src=this.src" src="images/build photos/20260530_154111 cam module to mount.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show9').src=this.src" src="images/build photos/20260530_154308 cam mount to main body.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show9" src="images/build diagrams/optics/camera assembly.png" alt=""/></div>
+
+<h2 id="check-your-assembly">Check your assembly</h2>
+<p>Check that you have everything in the right place according to the images below. (Note detectors and the LED flash tool are described on the next page (electronics).)</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show10').src=this.src" src="images/build diagrams/optics/main body with optics - 1s1f annotated.png" alt="" />
+    <img onmouseover="getElementById('gallery-show10').src=this.src" src="images/build diagrams/optics/main body with optics - 2s14f annotated.png" alt="" />
+    <img onmouseover="getElementById('gallery-show10').src=this.src" src="images/build diagrams/optics/main body with optics - 2s14f - perspective.png" alt="" />
+    <img onmouseover="getElementById('gallery-show10').src=this.src" src="images/build photos/20260928_152054 main body fully assembled 2s14f.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show10" src="images/build diagrams/optics/main body with optics - 1s1f annotated.png" alt=""/></div>
+<!-- GitBuilding Nav -->
+<hr />
+<p><a href="assemble_fluidics.html">Previous page</a> | <a href="electronics1s1f.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="../static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="doc-info">Documentation powered by GitBuilding</span>
+</a>
+
+    </div>
+</footer></body>
+</html>

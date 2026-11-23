@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Untitled project</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../static/Logo/favicon.ico" />
+<link rel="icon" type="image/png" href="../static/Logo/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../static/Logo/favicon-16x16.png" sizes="16x16" />
+
+    <link href="../static/base-style.css" rel="stylesheet">
+    <link href="../static/site-style.css" rel="stylesheet">
+                    
+        <script type="text/javascript" src="../static/search.js" defer=""></script>
+    </head>
+<body>
+<header class="site-header">
+    <div class="wrapper header-wrapper" >
+        <div class=header-text>
+   
+    <h1 class="site-title">Untitled project</h1>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="../">
+        Untitled project
+    </a>
+</li>
+<li id="nav-search" :class="focused && searchTerm.length > 0 ? 'search-result-popout' : 'search'" v-scope v-on:vue:mounted="mounted('../')">
+  <input
+    type="text"
+    placeholder="Search..."
+    v-on:input="search($event.target.value)"
+    v-on:keypress="handleKeyPress"
+    v-on:keyup.esc="$event.target.blur()"
+    v-on:focus="handleFocus"
+    v-on:blur="handleBlur"
+    :value="searchTerm" />
+    <div class="search-results" v-if="focused && searchTerm.length > 0">
+        <div v-if="searchResults.length > 0">Results:</div>
+        <div v-if="searchResults.length === 0">No results.</div>
+        <template v-for="(result, index) in searchResults">
+            <li>
+                <a class="search-result" :href="`../${result.path}.html`">
+               <span v-for="crumb in result.breadCrumbs.slice(0, -1)">
+                ${crumb + ' > '}
+                </span>
+               ${result.title || result.breadCrumbs[result.breadCrumbs.length - 1]}
+                <p>
+                    <span v-for="node in result.highlightChars" :class="node.mark ? 'highlight' : ''" >${node.chars}</span>
+                </p>
+                </a>
+            </li>
+        </template>
+    </div>
+</li>
+<li class="active">
+    <a class="active" href="../build_instructions/index.html">
+        Cytkit
+    </a>
+        <ul class="sub-nav-list">
+                <li>
+            <a class="not-active" href="../build_instructions/index_BOM.html">
+                Bill of Materials
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/print_parts.html">
+                Print the mechanical parts
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/source_parts.html">
+                Source the optical, electronic, fluidic and mechanical components
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/assemble.html">
+                Assemble the mechanics
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/assemble_fluidics.html">
+                Assemble the fluidics
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/assemble_optics.html">
+                Assemble the optics
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/electronics1s1f.html">
+                Electronics: Cytkit configuration 1S-1F
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/electronics2s14f.html">
+                Electronics: Cytkit configuration 2S-14F
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/software.html">
+                Install and run the software
+            </a>
+        </li>
+                <li>
+            <a class="active" href="../build_instructions/coarse_alignment.html">
+                Coarse alignment
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/fine_alignment.html">
+                Fine alignment
+            </a>
+        </li>
+                <li>
+            <a class="not-active" href="../build_instructions/test_cytometer.html">
+                Test your Cytkit cytometer
+            </a>
+        </li>
+            </ul>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="coarse-alignment">Coarse alignment</h1>
+<h2 id="diagram-of-adjustable-elements">Diagram of adjustable elements</h2>
+<p>Note the following diagrams labelling adjustable elements (for both 1S1F and 2S14F configurations), which are referred to in the steps below.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build diagrams/optics/main body with optics - 1s1f annotated adjustments.png" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build diagrams/optics/main body with optics - 2s14f annotated adjustments.png" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show0" src="images/build diagrams/optics/main body with optics - 1s1f annotated adjustments.png" alt=""/></div>
+<h2 class="page-step" id="safety-check">Step 1: Safety check</h2>
+<div class="caution-block">
+<p>It is your responsibility to work with the laser safely. Safety depends not only on the protocol that you are following, but also your experience, the environment that you are working in, the people around you who may be exposed to the laser, and your particular set-up and sources of materials.</p>
+<p>A risk assessment should consider all of the above factors.</p>
+</div>
+<p>The coarse alignment requires working with an exposed beam. However, if you have followed the assembly instructions so far, the beam should be fully blocked within the instrument with no intense reflections escaping. The direct beam passes from the laser module to the forward scatter detector where it is blocked.</p>
+<p>It is advisable to perform the coarse alignment wearing laser safety glasses that block 488 nm light, as direct visualisation of the beam is not required. </p>
+<h2 class="page-step" id="focus-camera-on-cuvette-channel">Step 2: Focus camera on cuvette channel</h2>
+<p>Move the camera to focus on the inner channel within the cuvette. You can use your host PC's USB camera software, or the Cytkit Hardware &gt; Alignment Camera tab within Honeychrome. You may need to adjust the exposure and brightness to see a clear image. Start with the camera tube lens screwed in fully, then turn the camera lens one revolution anticlockwise. Then move the camera in xy to an approximate focus and screw the camera down. Finally turn the camera focus slightly to improve the image. You should see an image like the one below. Depending on whether you are using a round capillary or a square-section cuvette, it will look either blurry (like this, due to astigmatism in the round capillary) or sharp. </p>
+<p><img alt="" src="images/build screenshots/Screenshot from 2026-11-18 13-39-28.png" title="" /></p>
+<h2 class="page-step" id="remove-laser-focus-assembly">Step 3: Remove laser focus assembly</h2>
+<p>Carefully unscrew and remove the laser focus assembly as shown.</p>
+<p><img alt="" src="images/build photos/alignment/20261118_124556 annotated.jpg" title="" /></p>
+<h2 class="page-step" id="power-on-laser">Step 4: Power on laser</h2>
+<p>For safety, ensure first that the laser is correctly seated within the instrument and the FSC detector mounted. </p>
+<p>Power on the laser by:</p>
+<ul>
+<li>1S1F configuration: switch on the power directly</li>
+<li>2S14F configuration: in Honeychrome, go to the Cytkit Hardware Tab, check that connection status says "Cytkit Connected". Then go to the "Light" tab. Check "Laser Enable", and uncheck "Interlock Enabled".</li>
+</ul>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/build photos/alignment/20261118_124646.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show1').src=this.src" src="images/build photos/alignment/20261118_135233.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show1" src="images/build photos/alignment/20261118_124646.jpg" alt=""/></div>
+<h2 class="page-step" id="coarse-laser-collimation">Step 5: Coarse laser collimation</h2>
+<p>Move the laser theta adjustment until you can see the blue laser light in the camera image. Insert the <a href="printed/lock_nut_tool_long.html">laser collimating lens adjustment tool (long)</a> through the <a href="printed/lock_nut.html" title="">laser collimating lens lock nut</a> and gently rotate until it finds its location locking against the collimating lens mount. </p>
+<p>Then loosen the lock nut by rotating slightly anticlockwise. Now holding the lock nut still, rotate the laser collimating lens adjustment tool until the laser reaches a focus as seen in the camera image.</p>
+<p><img alt="" src="images/build screenshots/Screenshot from 2026-11-18 13-45-57.png" title="" /></p>
+<p>Finally rotate the laser collimating lens adjustment tool half a turn clockwise to defocus the laser beyond the cuvette. Lock the lock nut. You should see that the laser spot occupies about half the height of the camera field of view.</p>
+<p><img alt="" src="images/build screenshots/Screenshot from 2026-11-18 13-42-26.png" title="" /></p>
+<h2 class="page-step" id="replace-and-coarsely-align-laser-focus-assembly">Step 6: Replace and coarsely align laser focus assembly</h2>
+<p>Switch off the laser again. Carefully replace the laser focus assembly into its position. Screw in loosely but do not tighten yet. Now switch the laser on again. You should be able to move the laser focus assembly by hand to bring it approximately to focus in the camera image. Once that is done, gently tighten the screw to hold it in place.</p>
+<h2 class="page-step" id="laser-focus--collimation-coarse-adjustment">Step 7: Laser focus / collimation coarse adjustment</h2>
+<p>Using a mobile phone camera, look at the diffuse laser spot image going through the laser focus assembly lenses. The elliptical spot's major axis should be vertical: loosen the screws holding the laser module within its heatsink and rotate the laser module within the heatsink until the elliptical spot is vertically aligned.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/build photos/alignment/20261118_135616.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show2').src=this.src" src="images/build photos/alignment/20261118_135616 zoomed annotated.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show2" src="images/build photos/alignment/20261118_135616.jpg" alt=""/></div>
+<p>You should now be able to bring the laser to a focus within the camera image by turning the lead screws for x1, y1 and theta. The focused laser spot makes a narrow band of scattered light in the camera image as it enters and leaves the cuvette inner channel.</p>
+<p><img alt="" src="images/build screenshots/Screenshot from 2026-11-18 14-01-00.png" title="" /></p>
+<h2 class="page-step" id="flow-fluorescein-solution-optional">Step 8: Flow fluorescein solution (optional)</h2>
+<p>You can visualise the laser focus by flowing a dilute solution of fluorescein through the sample SIP. This allows direct visualisation of the spectrum on the array of detectors. Fill your sheath tank first with some suitable sheath fluid (e.g. deionised water or phosphate buffered saline). Dilute fluorescein in water (10 mg/mL) and put in a <a href="test_materials/test_tube.html" title="">5 mL flow cytometry test tube</a>.</p>
+<p>Switch on the sheath flow:</p>
+<ul>
+<li>for 1S1F configuration, power the pump directly with the power supply and motor controller;</li>
+<li>for 2S14F configuration, press the initialisation button in the acquisition widget.</li>
+</ul>
+<p>Load a sample:</p>
+<ul>
+<li>for 1S1F configuration, power the stepper motor directly, and with the stepper motor controller, determine which direction is positive flow into the cuvette;</li>
+<li>for 2S14F configuration, press the start button in the acquisition widget.</li>
+</ul>
+<p>Adjust laser focus theta so that the fluorescent light emission enters the detector. Adjust x2 condenser so that the fluorescent light is well focused at the detector.</p>
+<p>To see the emission spectrum clearly, hold a white screen (e.g. paper) in front of the fluorescence detectors as shown.</p>
+<video src="images/build photos/alignment/fluorescein spectrum.mp4" controls width="640"></video>
+
+<p>Wash out well with sheath fluid before moving on, as residual fluorescein creates a lot of background fluorescence. Load sheath fluid or water onto the SIP, then flush:</p>
+<ul>
+<li>for 1S1F configuration, use the stepper motor controller to wash out the input line for 5 minutes;</li>
+<li>for 2S14F configuration, press the flush button in the acquisition widget. Repeat several times.</li>
+</ul>
+<h2 class="page-step" id="mount-fluorescence-chamber-lid">Step 9: Mount fluorescence chamber lid</h2>
+<p>Place the fluorescence compartment cap in place.</p>
+<p><img alt="" src="images/build photos/alignment/20261118_141507.jpg" title="" /></p>
+<h2 class="page-step" id="mount-instrument-cover-cytkit-2s14f-only">Step 10: Mount instrument cover (Cytkit 2S14F only)</h2>
+<p>If you are building the Cytkit configuration 2S14F, you may now put on the instrument cover and enable the interlock again.</p>
+<p>If you are building the Cytkit configuration 1S1F, do not place the instrument cover yet, as it must be off to access the FSC alignment in the next step.</p>
+<p>You are now ready to move on to fine alignment.</p>
+<!-- GitBuilding Nav -->
+<hr />
+<p><a href="software.html">Previous page</a> | <a href="fine_alignment.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="../static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="doc-info">Documentation powered by GitBuilding</span>
+</a>
+
+    </div>
+</footer></body>
+</html>
