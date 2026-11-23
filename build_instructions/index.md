@@ -12,7 +12,7 @@ You can configure your Cytkit with various detectors and acquisition electronics
 
 ![Cytkit 1s-1f fully assembled](images/build photos/20260530_180033 cytkit 1s-1f assembled.jpg)
 
-This is the 1-scatter 1-fluorescence configuration, which uses electronics from test equipment vendors: 1 x amplified photodiode ([Thorlabs PDA10](components/thorlabs_pda10.md){qty:1, cat:electronics1S1F}), 1 x PMT ([Hamamatsu H10732](components/hamamatsu_H10732.md){qty:1, cat:electronics1S1F}, 1 x USB oscilloscope ([Picoscope 5000 Series](components/picoscope.md){qty:1, cat:electronics1S1F}), as well as separate boards for motor control, and power supplies. 
+This is the 1-scatter 1-fluorescence configuration, which uses electronics from test equipment vendors: 1 x amplified photodiode ([Thorlabs PDA10](components/thorlabs_pda10.md)), 1 x PMT ([Hamamatsu H10732](components/hamamatsu_H10732.md), 1 x USB oscilloscope ([Picoscope 5000 Series](components/picoscope.md){qty:1, cat:electronics1S1F}), as well as separate boards for motor control, and power supplies. 
 
 >i Note that 1 fluorescence detector is pretty minimal for a spectral system, to make an understatement! (At least you can mount it at a wavelength of your choice.) Moreover, the USB oscilloscope can only transfer a low rate of events. This configuration is intended as an demonstration for education and technology development, rather than as a useful cytometer.
 

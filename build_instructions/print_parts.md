@@ -15,14 +15,14 @@ The following parts should be printed in matt black PLA. Their blackness is impo
 1. [Main body](printed/main_body.md){qty:1, cat:printed}
 1. [Base](printed/base.md){qty:1, cat:printed}
 1. [Laser holder](printed/laser_holder.md){qty:1, cat:printed}
-1. [Holder SiPM board](printed/holder_sipm_board.md){qty:1, cat:printed}
+1. [Holder SiPM board](printed/holder_sipm_board.md)
 
 For the Cytkit 1S-1F configuration:
 
 1. [Fluorescence compartment cap for PMT](printed/fluorescence_compartment_cap_pmt.md){qty:1, cat:printed1S1F}
 1. [Amplified PD holder](printed/Amplified_PD_holder.md){qty:1, cat:printed1S1F}
-1. [PMT mount base](printed/PMT_mount_base.md){qty:1, cat:printed1S1F}
-1. [PMT mount](printed/PMT_mount.md){qty:1, cat:printed1S1F}
+1. [PMT mount base](printed/PMT_mount_base.md)
+1. [PMT mount](printed/PMT_mount.md)
 1. [Cover (with cable holes)](printed/Cover_with_cable_holes.md){qty:1, cat:printed1S1F}
 
 For the Cytkit 2S-14F configuration:
@@ -31,7 +31,7 @@ For the Cytkit 2S-14F configuration:
 1. [PD board holder (h-adjust)](printed/pd_holder_h.md){qty:1, cat:printed2S14F}
 1. [FSC v-slit 0.4mm](printed/fsc_v_slit.md){qty:1, cat:printed2S14F}
 1. [PD board holder (v-adjust h-slit)](printed/pd_board_holder_v.md){qty:1, cat:printed2S14F}
-1. [ND filter holder for FSC](printed/nd_filter_holder.md){qty:1, cat:printed2S14F}
+1. [ND filter holder for FSC](printed/nd_filter_holder.md)
 1. [Holder SiPM board](printed/holder_sipm_board.md){qty:1, cat:printed} (print an additional one to the one listed above)
 1. [Cover (with optics diagram)](printed/cover_with_optics_diagram.md){qty:1, cat:printed1S1F}
 1. [Cable stay bar](printed/cable_stay_bar.md){qty:1, cat:printed1S1F}
@@ -42,22 +42,22 @@ For the Cytkit 2S-14F configuration:
 
 The following parts should also be rigid and black, but require a bit more flexibility to hold optics firmly or allow flexural degrees of freedom. Therefore PLA+ is recommended.
 
-1. [Focusing lens holders](printed/foc_lens_holder.md){qty:1, cat:printed}
-1. [Condensing lens holder](printed/condensing_lens_holder.md){qty:1, cat:printed}
-1. [Correction cylindrical lens holder](printed/correction_cyl_lens_holder.md){qty:1, cat:printed}
+1. [Focusing lens holder](printed/foc_lens_holder.md)
+1. [Condensing lens holder](printed/condensing_lens_holder.md)
+1. [Correction cylindrical lens holder](printed/correction_cyl_lens_holder.md)
 1. [Camera mount v-adjust](printed/camera_mount_v_adjust.md){qty:1, cat:printed}
-1. [Circular filter holder (26mm diameter)](printed/coloured_glass_filter_holder.md){qty:2, cat:printed}
-1. [Grating holder](printed/grating_holder.md){qty:1, cat:printed}
-1. [Spectrum focusing lens holder](printed/spectrum_focus_lens_holder.md){qty:1, cat:printed}
+1. [Circular filter holder (26mm diameter)](printed/coloured_glass_filter_holder.md){qty:1, cat:printed}
+1. [Grating holder](printed/grating_holder.md)
+1. [Spectrum focusing lens holder](printed/spectrum_focus_lens_holder.md)
 1. [LED holder for fluorescence and SSC testing](printed/led_holder_fl_ssc_test.md){qty:1, cat:printed}
-1. [SSC focusing lens holder](printed/ssc_focus_lens_holder.md){qty:1, cat:printed}
+1. [SSC focusing lens holder](printed/ssc_focus_lens_holder.md)
 
 Since a variety of filter sizes are available from optics suppliers as stock items, we also provide a set of alternative size holders:
 
-1. [Circular filter holder (34mm diameter)](printed/circular_filter_holder_34mm_diameter.md){qty:1, cat:printed}
-1. [Circular filter holder (25mm diameter)](printed/circular_filter_holder_25mm_diameter.md){qty:1, cat:printed}
-1. [Circular filter holder (15mm diameter)](printed/circular_filter_holder_15mm_diameter.md){qty:1, cat:printed}
-1. [Rectangular filter holder (25.5x26mm)](printed/rectangular_filter_holder.md){qty:1, cat:printed}
+1. [Circular filter holder (34mm diameter)](printed/circular_filter_holder_34mm_diameter.md)
+1. [Circular filter holder (25mm diameter)](printed/circular_filter_holder_25mm_diameter.md)
+1. [Circular filter holder (15mm diameter)](printed/circular_filter_holder_15mm_diameter.md)
+1. [Rectangular filter holder (25.5x26mm)](printed/rectangular_filter_holder.md)
 
 
 ## White PLA parts
@@ -98,7 +98,7 @@ The following parts can be printed in any colour. TPU is recommended to absorb n
 The following parts should all be printed using a resin printer (e.g. an LCD printer) in black resin (e.g. ABS-like black resin). The resin print has much higher resolution than FDM and allows proper sealing of fluidic parts as well as accurate printing of fine threads.
 
 1. [Sheath chamber](printed/sheath_chamber.md){qty:1, cat:printed_resin}
-1. [Laser collimating lens lock nut](printed/lock_nut.md){qty:1, cat:printed_resin}
+1. [Laser collimating lens lock nut](printed/lock_nut.md)
 1. [Laser collimating lens adjustment tool (short)](printed/lock_nut_tool_short.md){qty:1, cat:printed_resin}
-1. [Laser collimating lens adjustment tool (long)](printed/lock_nut_tool_long.md){qty:1, cat:printed_resin}
+1. [Laser collimating lens adjustment tool (long)](printed/lock_nut_tool_long.md)
 1. [Camera tube lens](printed/camera_tube_lens.md){qty:1, cat:printed_resin}

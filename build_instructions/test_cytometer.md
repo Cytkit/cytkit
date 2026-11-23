@@ -6,7 +6,7 @@ Your Cytkit instrument should now be fully aligned and working with its case on.
 
 You can flow alignment beads as in the previous step. In Honeychrome, you should see tight populations in FSC and fluorescence as shown below.
 
-![](images/build photos/alignment/alignment_beads_fsc_a+h.png)
+![](images/build photos/alignment/alignment_beads_fsc_a_h.png)
 ![](images/build photos/alignment/alignment_beads_b1.png)
 
 ## Flow rainbow beads {pagestep}
@@ -40,4 +40,4 @@ After flowing biological samples, it is recommended to flush each cleaning agent
 
 ## Let us know your feedback {pagestep}
 
-Very important! [Let us know how it went and any feedback or ideas.](https://cytkit.com/contact/)
+This step is very important! The Cytkit contributors have put a lot of hard work into this project, and we need feedback if it is to grow and continue. [Please let us know how your build went, and any feedback or ideas.](https://cytkit.com/contact/)

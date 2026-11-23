@@ -1,7 +1,7 @@
 ---
 PartData:
     Specs:
-        Design output: "main body with optics-LED holder for FL+SSC testing.stl"
+        Design output: "main body with optics-LED holder for FL_SSC testing.stl"
         Material: PLA+ (Black)
         Print orientation: upright
 
@@ -10,5 +10,5 @@ PartData:
 
 Push-in holder for the LED and D7F8 lens.
 
-![](stl/main body with optics-LED holder for FL+SSC testing.stl)
+![](stl/main body with optics-LED holder for FL_SSC testing.stl)
 

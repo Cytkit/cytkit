@@ -25,7 +25,7 @@ Thirdly flex the flow cell slightly as shown below to insert the cuvette between
 ![](images/build diagrams/20260515_145654 sealing surface.jpg)
 ![](images/build diagrams/flow cell assembly.png)
 
-Fourthly attach 120 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md){cat:fluidics} to the waste barb on top of the flow cell, and thread this tube through the duct on the side of the flow cell so it sticks out of the bottom.
+Fourthly attach 120 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md) to the waste barb on top of the flow cell, and thread this tube through the duct on the side of the flow cell so it sticks out of the bottom.
 
 ![](images/build photos/20260814_111028 waste tube top of cuvette.jpg)
 
@@ -56,14 +56,14 @@ Attach the following fitings and tubing to the caps, threading them from inside 
 
 **Sheath tank cap:**
 
-1. [Bottom-of-bottle filter](fluidic/bottom_of_bottle_filter.md){qty:1, cat:fluidics} + 250 mm of [Silicone tubing 6 mm OD 4 mm ID](fluidic/silicone_tubing_4mm.md){cat:fluidics}; pass through 5 mm cap hole from inside to outside, then add
+1. [Bottom-of-bottle filter](fluidic/bottom_of_bottle_filter.md){qty:1, cat:fluidics} + 250 mm of [Silicone tubing 6 mm OD 4 mm ID](fluidic/silicone_tubing_4mm.md); pass through 5 mm cap hole from inside to outside, then add
 [Tube barb union 2.4x6.4](fluidic/tube_barb_union2.4x6.4.md){qty:1, cat:fluidics}.
 
 **Waste tank cap:**
 
-1. For waste stream: 50 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md){cat:fluidics} + [Tube barb union 1.6x2.4](fluidic/tube_barb_union1.6x2.4.md){qty:1, cat:fluidics}; pass through 3 mm cap hole from inside to outside, then add 480 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md){cat:fluidics}.
-1. For pressure sensor or vent: [Tube barb union 1.6x3.2](fluidic/tube_barb_union1.6x3.2.md){qty:1, cat:fluidics} + 400 mm of [Silicone tubing 3.2 mm OD 1.6 mm ID](fluidic/silicone_tubing_1.6mm.md){cat:fluidics}; pass through 3.5 mm cap hole from inside to outside.
-1. For vacuum pump: [Tube barb union 1.6x3.2](fluidic/tube_barb_union1.6x3.2.md){qty:1, cat:fluidics} + 400 mm of [Silicone tubing 3.2 mm OD 1.6 mm ID](fluidic/silicone_tubing_1.6mm.md){cat:fluidics}; pass through 3.5 mm cap hold from inside to outside.
+1. For waste stream: 50 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md) + [Tube barb union 1.6x2.4](fluidic/tube_barb_union1.6x2.4.md){qty:1, cat:fluidics}; pass through 3 mm cap hole from inside to outside, then add 480 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md).
+1. For pressure sensor or vent: [Tube barb union 1.6x3.2](fluidic/tube_barb_union1.6x3.2.md){qty:1, cat:fluidics} + 400 mm of [Silicone tubing 3.2 mm OD 1.6 mm ID](fluidic/silicone_tubing_1.6mm.md); pass through 3.5 mm cap hole from inside to outside.
+1. For vacuum pump: [Tube barb union 1.6x3.2](fluidic/tube_barb_union1.6x3.2.md){qty:1, cat:fluidics} + 400 mm of [Silicone tubing 3.2 mm OD 1.6 mm ID](fluidic/silicone_tubing_1.6mm.md); pass through 3.5 mm cap hold from inside to outside.
 
 In the waste tank cap, push the tube barbs from the inside into the holes in the cap so that they seal. Screw the caps on both bottles. You can then put 2x cable ties on the bundle of tubing coming out of the waste bottle at 50 mm intervals to keep them tidy.
 
@@ -99,7 +99,7 @@ Attach the sample loader retaining spring ([Stainless steel extension springs, 0
 ![](images/build photos/20260814_114021 sample loader limiters.jpg)
 ![](images/build photos/20260814_114120 sample loader spring.jpg)
 
-Finally, check that the SIP tube will fit in the sample loader: you may need to carefully ream the hole with a 1.6 mm drill bit. The SIP tube is a 78 mm length of [Peek tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md){cat:fluidics}. Cut the required length, straighten it if it was supplied curved, and gentle push it into the hole provided.
+Finally, check that the SIP tube will fit in the sample loader: you may need to carefully ream the hole with a 1.6 mm drill bit. The SIP tube is a 78 mm length of [Peek tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md). Cut the required length, straighten it if it was supplied curved, and gentle push it into the hole provided.
 
 ![](images/build diagrams/20260530_125001 fit SIP.jpg)
 
@@ -115,14 +115,14 @@ First fit the barb connectors to the peristaltic pump tubing.
 
 >? **Help Block** 
 >?
->? if no barb connectors were supplied with your pump, these can be substituted with 10 mm sections of [Peek tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md){qty:1, cat:fluidics}.
+>? if no barb connectors were supplied with your pump, these can be substituted with 10 mm sections of [PEEK tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md).
 
 If building the Cytkit 2S-14F, fit the stepper motor connector board to the pump, and ribbon cable to the stepper motor connector board.
 
 Then fit the following tubing to the sample pump:
 
-1. For flow cell sample inlet: 20 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md){cat:fluidics}.
-2. For SIP tube: 55 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md){cat:fluidics}.
+1. For flow cell sample inlet: 20 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md).
+2. For SIP tube: 55 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md).
 3. SIP tube itself (as described above).
 
 ![](images/build photos/20260814_105418 sample pump with barbs.jpg)
@@ -135,7 +135,7 @@ If building the Cytkit 1S-1F configuration, first cut 2 x 200 mm wires for posit
 
 >i If building the Cytkit 2S-14F configuration, the vacuum pump is already supplied with the correct length of wires and a connector to attach to the main board
 
-Place the pump body in the sheath pump holder (flexible printed part). Then cut 90 mm of  [Silicone tubing 6 mm OD 4 mm ID](fluidic/silicone_tubing_4mm.md){cat:fluidics} and put on the end a [Tube barb union 2.4x6.4](fluidic/tube_barb_union2.4x6.4.md){qty:2, cat:fluidics}.
+Place the pump body in the sheath pump holder (flexible printed part). Then cut 90 mm of  [Silicone tubing 6 mm OD 4 mm ID](fluidic/silicone_tubing_4mm.md) and put on the end a [Tube barb union 2.4x6.4](fluidic/tube_barb_union2.4x6.4.md){qty:1, cat:fluidics}.
 
 
 ![](images/build photos/20260814_114200 sheath pump assm.jpg)
@@ -146,8 +146,8 @@ Place the pump body in the sheath pump holder (flexible printed part). Then cut 
 Now attach the following:
 
 1. The flow cell sample inlet barb to the open tubing on the sample pump.
-1. A barb connector (or 10 mm length of [Peek tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md){qty:1, cat:fluidics}) on the end of the waste tube coming from the flow cell.
-1. 470 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md){cat:fluidics} on the flow cell sheath inlet barb.
+1. A barb connector (or 10 mm length of [PEEK tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md)) on the end of the waste tube coming from the flow cell.
+1. 470 mm of [Silicone tubing 2 mm OD 1 mm ID](fluidic/silicone_tubing_1mm.md) on the flow cell sheath inlet barb.
 
 ![](images/build photos/20260814_111404 fluidic system.jpg)
 ![](images/build photos/20260814_111116 sample pump to flow cell.jpg)
@@ -189,7 +189,7 @@ Connect tubing:
 1. Connect the waste tubing to the barb hanging from the flow cell waste outlet.
 1. Thread the pump tubing from the waste tank through the front hole of the second row of holes in the left hand side of the stand, and connect it to the barb coming out of the vacuum pump assembly.
 1. If building the Cytkit 2S-14F configuration, thread the pressure sensor tubing from the waste tank through the remaining hole in the second row of holder in the left hand side of the stand.
-1. If building the Cytkit 1S-1F configuration, insert a 30 mm section of [Peek tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md){cat:fluidics} in the waste tank vent tubing.
+1. If building the Cytkit 1S-1F configuration, insert a 30 mm section of [PEEK tubing 1.6mm OD 0.25mm ID](fluidic/peek_tubing.md) in the waste tank vent tubing.
 1. Thread the dangling sheath and waste tubes through the serpentine retaining groove.
 
 ![](images/build diagrams/20260814_121001 tubing through stand outside.jpg)

@@ -6,7 +6,7 @@ PartData:
         Print orientation: upright
 
 ---
-# Sheath chamber
+# Flow cell with sheath chamber
 
 Interfaces the tubing for sample and sheath input and waste output; interfaces the 4 mm square-section cuvette or 4-mm thick-walled capillary via o-ring grooves. Provides hydrodynamic focusing (in-built sheath/core flow chamber).
 

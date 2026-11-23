@@ -42,7 +42,7 @@ Power on the laser by:
 
 ## Coarse laser collimation {pagestep}
 
-Move the laser theta adjustment until you can see the blue laser light in the camera image. Insert the [laser collimating lens adjustment tool (long)](printed/lock_nut_tool_long.md){qty:1, cat:printed_resin} through the [laser collimating lens lock nut](printed/lock_nut.md){qty:1, cat:printed_resin} and gently rotate until it finds its location locking against the collimating lens mount. 
+Move the laser theta adjustment until you can see the blue laser light in the camera image. Insert the [laser collimating lens adjustment tool (long)](printed/lock_nut_tool_long.md){qty:1, cat:printed_resin} through the [laser collimating lens lock nut](printed/lock_nut.md) and gently rotate until it finds its location locking against the collimating lens mount. 
 
 Then loosen the lock nut by rotating slightly anticlockwise. Now holding the lock nut still, rotate the laser collimating lens adjustment tool until the laser reaches a focus as seen in the camera image.
 
@@ -69,7 +69,7 @@ You should now be able to bring the laser to a focus within the camera image by 
 
 ## Flow fluorescein solution (optional) {pagestep}
 
-You can visualise the laser focus by flowing a dilute solution of fluorescein through the sample SIP. This allows direct visualisation of the spectrum on the array of detectors. Fill your sheath tank first with some suitable sheath fluid (e.g. deionised water or phosphate buffered saline). Dilute fluorescein in water (10 mg/mL) and put in a [5 mL flow cytometry test tube](test_materials/test_tube.md){cat:"test_materials"}.
+You can visualise the laser focus by flowing a dilute solution of fluorescein through the sample SIP. This allows direct visualisation of the spectrum on the array of detectors. Fill your sheath tank first with some suitable sheath fluid (e.g. deionised water or phosphate buffered saline). Dilute fluorescein in water (10 mg/mL) and put in a [5 mL flow cytometry test tube](test_materials/test_tube.md).
 
 Switch on the sheath flow:
 

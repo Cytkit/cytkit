@@ -7,20 +7,20 @@
 >! You can use plastic tweezers to handle the glass optical elements. Don't use metal tweezers as they risk scratching or chipping the glass.
 >! 
 
-## Assemble laser module  {pagestep}
+## Assemble laser holder and module  {pagestep}
 First cut of the brims and support tab of the printed [Laser holder](printed/laser_holder.md) as shown. 
 
-Second, attach the [Laser heatsink](optical/laser_heatsink.md) to the laser holder with 4x [M3 self-tapping posi head screws 10 mm](mechanical/screws.yaml#self_tapping_m3x10_posi){qty:4, cat:mechanics}
+Second, attach the [Laser heatsink](optical/laser_heatsink.md){qty:1, cat:optics} to the laser holder with 4x [M3 self-tapping posi head screws 10 mm](mechanical/screws.yaml#self_tapping_m3x10_posi){qty:4, cat:mechanics}
 
-Third, screw the M9 mounted [Laser collimating lens](optical/laser_collimating_lens.md){qty:1, cat:optics} into the internal thread at the front of the laser module. About 2 mm of the threaded mount should be poking out from the laser module.
+Third, screw the M9 mounted [Laser collimating lens](optical/laser_collimating_lens.md){qty:1, cat:optics} into the internal thread at the front of the [488 nm laser module](optical/laser_module.md){qty:1, cat:optics} . About 2 mm of the threaded mount should be poking out from the laser module.
 
-Fourth, insert the [Laser collimating lens lock nut adjustment tool (short)](printed/lock_nut_tool_short.md){qty:1, cat:printed_resin} through the [Laser collimating lens lock nut](printed/lock_nut.md){qty:1, cat:printed_resin} so that its two teeth stick out on the side facing the mounted laser collimating lens. 
+Fourth, insert the [Laser collimating lens adjustment tool (short)](printed/lock_nut_tool_short.md) through the [Laser collimating lens lock nut](printed/lock_nut.md){qty:1, cat:printed_resin} so that its two teeth stick out on the side facing the mounted laser collimating lens. 
 
 Fifth, using the tool to stop the laser collimating lens from rotating, rotate the lock nut onto the mounted laser collimating lens until it gently locks against the body of the laser module, as shown.
 
 Sixth, insert the laser module into the laser heatsink and tighten the two retaining screws gently.
 
-Seventh, attach the laser module to the [Main body](printed/main_body.md) with 2x [M3 self-tapping posi head screws 16 mm](mechanical/screws.yaml#self_tapping_m3x10_posi){qty:4, cat:mechanics} at the front of the module, and 1x [M3 self-tapping hex socket cap screws 25 mm](mechanical/screws.yaml#self_tapping_m3x25_hex_socket){qty:1, cat:mechanics} with 1x [Stainless steel compression springs, 0.5 mm wire, 20 mm length, 6 mm diameter](mechanical/springs_20x6x0.5mm.md){qty:1, cat:mechanics} at the adjustment arm at the back of the module.
+Seventh, attach the laser module to the [Main body](printed/main_body.md) with 2x [M3 self-tapping posi head screws 16 mm](mechanical/screws.yaml#self_tapping_m3x16_posi){qty:4, cat:mechanics} at the front of the module, and 1x [M3 self-tapping hex socket cap screws 25 mm](mechanical/screws.yaml#self_tapping_m3x25_hex_socket){qty:1, cat:mechanics} with 1x [Stainless steel compression springs, 0.5 mm wire, 20 mm length, 6 mm diameter](mechanical/springs_20x6x0.5mm.md){qty:1, cat:mechanics} at the adjustment arm at the back of the module.
 
 ![](images/build diagrams/optics/laser assembly annotated.png)
 ![](images/build photos/20260530_150922 assemble laser collimating lens.jpg)
@@ -138,7 +138,7 @@ With the coated surface facing the condensing lens, insert the beamsplitter into
 
 ## Assemble and mount camera module  {pagestep}
 
-First insert a 7 mm disc of the [Laser blocking film](optical/laser_blocking_film.md){qty:1, cat:optics} into the [Camera lens tube](printed/camera_tube_lens.md){qty:1, cat:printed_resin} then the [F7D8 aspherical lens](optical/F7D8_aspherical_lens.md){qty:1, cat:optics} lens on top of the film. Make sure the flatter side of the aspherical lens faces outward.
+First insert the [5 mm laser blocking filter](optical/laser_blocking_filter.md){qty:1, cat:optics} into the [Camera lens tube](printed/camera_tube_lens.md){qty:1, cat:printed_resin} then the [F7D8 aspherical lens](optical/F7D8_aspherical_lens.md){qty:1, cat:optics} lens on top of the film. Make sure the flatter side of the aspherical lens faces outward.
 
 Next screw the camera lens tube onto the camera module, leaving about 2 mm before it bottoms out.
 
@@ -146,7 +146,7 @@ Next screw the camera module onto the camera mount with 4x [M2.6 self-tapping po
 
 Optionally add vertical adjustment to the camera mount as follows:
 
-1. 1x [Stainless steel extension spring, 0.3 mm wire, 20 mm length, 6 mm diameter](mechanical/extension_springs_20x6x0.3mm.md){qty:1, cat:mechanics} in the camera mount between the overhanging tab and the base of the mount.
+1. 1x[Stainless steel compression springs, 0.5 mm wire, 20 mm length, 6 mm diameter](mechanical/springs_20x6x0.5mm.md){qty:1, cat:mechanics} in the camera mount between the overhanging tab and the base of the mount.
 2. 1x [M3 self-tapping posi head screws 12 mm](mechanical/screws.yaml#self_tapping_m3x12_posi){qty:1, cat:mechanics} through the tab and spring.
 
 The camera mount can now be adjusted slightly up and down by turning the screw.

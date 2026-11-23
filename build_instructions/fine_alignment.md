@@ -6,7 +6,7 @@ If you are building the Cytkit configuration 1S1F, do not place the instrument c
 
 ## Flow alignment beads {pagestep}
 
-To carry out fine alignment, you need [bright green fluorescent alignment beads](test_materials/alignment_beads.md){qty:1, cat:test_materials}. Dilute them to a reasonable concentration (say, 1e5 to 1e6 per mL) in a [5 mL flow cytometry test tube](test_materials/test_tubes.md){cat:test_materials}.
+To carry out fine alignment, you need [bright green fluorescent alignment beads](test_materials/alignment_beads.md){qty:1, cat:test_materials}. Dilute them to a reasonable concentration (say, 1e5 to 1e6 per mL) in a [5 mL flow cytometry test tube](test_materials/test_tube.md).
 
 Flow them on your Cytkit as follows.
 

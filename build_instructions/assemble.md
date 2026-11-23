@@ -26,7 +26,7 @@ Carefully lower the main body onto the base as shown so that the circular caviti
 ![](images/build photos/20260530_122819 main body to base.jpg)
 ![](images/build diagrams/main body to base.png)
 
-Screw in the 4 x [M3 self-tapping hex socket cap screws 25 mm](mechanical/screws.yaml#self_tapping_m3x25_hex_socket){qty:4, cat:mechanics}, first placing 1x [M3 washers](mechanical/screws.yaml#m3_washers){qty:1, cat:mechanics} under the screw head. These are the lead screws of the adjustment arms, one on each adjustment arm. Do not fully tighten. Screw them in so that the adjustment arms are horizontal and the xy flexure stages are centred.
+Screw in the 4 x [M3 self-tapping hex socket cap screws 25 mm](mechanical/screws.yaml#self_tapping_m3x25_hex_socket){qty:4, cat:mechanics}, first placing 1x [M3 washers](mechanical/screws.yaml#m3_washers){qty:4, cat:mechanics} under each of the screw head. These are the lead screws of the adjustment arms, one on each adjustment arm. Do not fully tighten. Screw them in so that the adjustment arms are horizontal and the xy flexure stages are centred.
 
  ![](images/build diagrams/lead screws.png)
  ![](images/build diagrams/adjustment arm.png)

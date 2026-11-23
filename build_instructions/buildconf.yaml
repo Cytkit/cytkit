@@ -1,4 +1,4 @@
-Affiliation: Astute Devices
+Affiliation: The Cytkit Project
 CustomCategories:
   electronics1S1F:
     DisplayName: Electronic parts for Cytkit 1S-1F configuration
@@ -31,8 +31,8 @@ CustomCategories:
     DisplayName: Safety Equipment
     Reuse: false
   test_materials:
-    Reuse: false
     DisplayName: Test Materials
+    Reuse: false
 Email: hello@cytkit.com
 HoverColor: '#555555'
 License: CERN-OHL-S-2.0

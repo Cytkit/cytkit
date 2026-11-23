@@ -46,6 +46,18 @@ self_tapping_m3x10_posi:
         Aliexpress:
             PartNo: Black Carbon Steel Phillips Truss Head Screw
             Link: 'https://www.aliexpress.com/item/1005009495394483.html'
+self_tapping_m3x10_posi_head_countersunk:
+    Name: Countersunk M3 self-tapping posi head screws 10 mm (black)
+    Description: Metric Screw
+    Specs:
+        Material: Carbon Steel (Black)
+        Thread: M3
+        Length: 10 mm
+        Cap: Philips/Posi countersunk
+    Suppliers:
+        Aliexpress:
+            PartNo: Black Carbon Steel Phillips Truss Head Screw
+            Link: 'https://www.aliexpress.com/item/1005009495394483.html'
 self_tapping_m3x12_posi:
     Name: M3 self-tapping posi head screws 12 mm (black)
     Description: Metric Screw
@@ -78,6 +90,30 @@ self_tapping_m2.6x6_posi:
         Thread: M2.6
         Length: 6 mm
         Cap: Philips/Posi
+    Suppliers:
+        Aliexpress:
+            PartNo: Black Carbon Steel Phillips Truss Head Screw
+            Link: 'https://www.aliexpress.com/item/1005009495394483.html'
+m2x8_hex_socket:
+    Name: M2 machine bolts hex socket head screws 8 mm (black)
+    Description: Metric Screw
+    Specs:
+        Material: Carbon Steel (Black)
+        Thread: M2
+        Length: 8 mm
+        Cap: Hex socket
+    Suppliers:
+        Aliexpress:
+            PartNo: Black Carbon Steel Phillips Truss Head Screw
+            Link: 'https://www.aliexpress.com/item/1005009495394483.html'
+m4x10_hex_socket:
+    Name: M4 machine bolts hex socket head screws 10 mm (black)
+    Description: Metric Screw
+    Specs:
+        Material: Carbon Steel (Black)
+        Thread: M4
+        Length: 10 mm
+        Cap: Hex socket
     Suppliers:
         Aliexpress:
             PartNo: Black Carbon Steel Phillips Truss Head Screw
