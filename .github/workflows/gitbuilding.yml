@@ -1,6 +1,6 @@
 name: Deploy Gitbuilding Project to Github Pages
 
-on: [push]
+on:
   push:
    branches: [ main ]   # Replace with your actual branch name
   # Allows you to run this workflow manually from the Actions tab
