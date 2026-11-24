@@ -26,7 +26,7 @@ When the beads pass through the laser focus, they will emit an intense flash of 
 
 If coarse alignment was successful. In Honeychrome (View > Oscilloscope Viewer) you should see something like the following: a rising edge refreshing several times per second. If you do not, gradually increase your fluorescence detector's bias voltage, making sure that the baseline stays below 100 mV.
 
-<video src="images/build photos/alignment/Screencast from 2026-11-19 12-27-01 alignment beads after coarse alignment in honeychrome.webm" controls width="640"></video>
+<video src="images/build%20photos/alignment/Screencast%20from%202026-11-19%2012-27-01%20alignment%20beads%20after%20coarse%20alignment%20in%20honeychrome.webm" controls width="640"></video>
 
 For Cytkit 1S1F you can also do the same in the Picoscope software. 
 
@@ -53,7 +53,7 @@ While watching the oscilloscope, carefully adjust the following in order to make
 
 Your fluorescence peak should start to look like a clean Gaussian as shown below.
 
-<video src="images/build photos/alignment/Screencast from 2026-11-19 14-34-08 alignment beads after align fine fl.webm" controls width="640"></video>
+<video src="images/build photos/alignment/Screencast from 2026-11-19 14-34-08 alignment beads after align fine fl.webm" controls width="640" type="video/mp4"></video>
 
 >i Tip: Make your adjustments carefully: before turning each lead screw, make a mental note of its position, so that you can return to it if you go to far and the signal disappears. 
 >i 
