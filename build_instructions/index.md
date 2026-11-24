@@ -1,6 +1,6 @@
 # Cytkit
 
-Cytkit is an open-source spectral cytometer. You can make your own, either from a kit or by sourcing all the parts yourself. All mechanical parts are designed to be 3D-printed. You can also study and modify the design in free software (FreeCAD, with an ray-tracing optical model in the FreeCAD Optical Workbench).
+Cytkit is an open-source spectral cytometer. You can make your own, either from a kit or by sourcing all the parts yourself according to the configurations below. All mechanical parts are designed to be 3D-printed. You can also study and modify the design in free software ([Freecad](https://www.freecad.org/), with an ray-tracing optical model in the [FreeCAD Optical Workbench](https://github.com/chbergmann/OpticsWorkbench)).
 
 The Cytkit instrument comprises: one laser, beam-shaping optics, a fluidic system with sheath flow and pumps for sample and sheath, optics for collecting and filtering emitted light, a dispersion element to split the emission into a spectrum, and [flexural degrees of freedom](https://doi.org/10.1364/BOE.385729) to align the laser beam and align the emission to detectors. 
  
@@ -14,17 +14,17 @@ You can configure your Cytkit with various detectors and acquisition electronics
 
 This is the 1-scatter 1-fluorescence configuration, which uses electronics from test equipment vendors: 1 x amplified photodiode ([Thorlabs PDA10](components/thorlabs_pda10.md)), 1 x PMT ([Hamamatsu H10732](components/hamamatsu_H10732.md), 1 x USB oscilloscope ([Picoscope 5000 Series](components/picoscope.md){qty:1, cat:electronics1S1F}), as well as separate boards for motor control, and power supplies. 
 
->i Note that 1 fluorescence detector is pretty minimal for a spectral system, to make an understatement! (At least you can mount it at a wavelength of your choice.) Moreover, the USB oscilloscope can only transfer a low rate of events. This configuration is intended as an demonstration for education and technology development, rather than as a useful cytometer.
+>i Note that 1 fluorescence detector is pretty minimal for a spectral system, to make an understatement! (At least you can mount it at a wavelength of your choice.) Moreover, the USB oscilloscope can only transfer a low rate of events. This configuration is intended as an demonstration for education and technology development, rather than as a workhorse cytometer.
 
 ## Cytkit 2S-14F 
 
 ![Cytkit 1s-1f fully assembled](images/build photos/20260530_181626 cytkit 2s-14f assembled.jpg)
 
-This is the 2-scatter 14-fluorescence configuration, which uses the [Astute Devices Cytometry Electronics Kit](components/cytometry_electronics_kit.md){qty:1, cat:electronics2S14F} (2x photodiode board, 1x SiPM array board, 1x main board, 1x pump connector board, 2x interlock switches, 1x blower fan, 1x OLED display, 1x power supply, 1x set of cables). 
+This is the 2-scatter 14-fluorescence configuration, which uses the [Astute Devices 16-Channel Cytometry Electronics Kit](components/cytometry_electronics_kit.md){qty:1, cat:electronics2S14F} (2x photodiode board, 1x SiPM array board, 1x main board, 1x pump connector board, 2x interlock switches, 1x blower fan, 1x OLED display, 1x power supply, 1x set of cables). 
 
 This configuration is intended as an easy way to build your own fully functional spectral cytometer. 
 
->i The Astute Devices Cytometry Electronics Kit is in development and anticipated to be released in Q4 2026.
+>i The Astute Devices 16-Channel Cytometry Electronics Kit is in development and anticipated to be released in Q4 2026.
 
 
 # Safety first
@@ -33,9 +33,9 @@ This configuration is intended as an easy way to build your own fully functional
 
 Suitable laser safety glasses that block 488 nm light are included in the bill of materials.
 
-At no point should you switch on the laser unless it is contained within the main body of the Cytkit instrument with the beam blocked by the FSC detector.
+It is recommended that you do not switch on the laser unless it is contained within the main body of the Cytkit instrument with the beam blocked by the FSC detector.
 
-The coarse alignment step in the build instructions requires working with an exposed beam (cover off). You should take safety precautions for this step: 
+The coarse alignment step in the build instructions requires working with an exposed beam (instrument cover off). You should take safety precautions for this step: 
 
 * check for stray reflections 
 * wear laser safety goggles that block 488 nm light 
@@ -43,7 +43,7 @@ The coarse alignment step in the build instructions requires working with an exp
 
 The fine alignment and operational use of the instrument are with the beam enclosed (cover on). 
 
-Two interlocks are provided in the Astute Devices Cytometry Electronics Kit to switch off the laser if the cover is removed.
+Two interlocks are provided in the Astute Devices 16-Channel Cytometry Electronics Kit to switch off the laser if the cover is removed.
 
 # Build Instructions
 
@@ -59,8 +59,8 @@ Unless you have purchased a kit, you will need the following in addition:
 
 To align and test the instrument, you will need:
 
-* bright fluorescein beads 5 um diameter (or any size less than 20 um) 
-* rainbow calibration beads (e.g. Spherotech RCP-30-5A or Bangs Quantum 8-Peak)
+* bright green fluorescent beads
+* rainbow calibration beads (e.g. Spherotech RCP-30-5A, Spherotech RCP-60-5, or Bangs Quantum 8-Peak)
 * fluorescein solution (optional)
 
 1. [Print the mechanical parts](print_parts.md){step}

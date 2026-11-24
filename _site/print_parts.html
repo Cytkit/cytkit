@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cytkit</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./static/Logo/favicon.ico" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-16x16.png" sizes="16x16" />
+
+    <link href="./static/base-style.css" rel="stylesheet">
+    <link href="./static/site-style.css" rel="stylesheet">
+                <style>
+  :root {
+    --primary-color: #f1502f;
+  }
+</style>
+<style>
+  :root {
+    --secondary-color: #cccccc;
+  }
+</style>
+<style>
+  :root {
+    --hover-color: #555555;
+}
+</style>
+    
+        <script type="text/javascript" src="./static/search.js" defer=""></script>
+    </head>
+<body>
+<header class="site-header">
+    <div class="wrapper header-wrapper" >
+        <header class="cytkit-header">
+  <div class="cytkit-header-inner">
+
+    <!-- Logo, links to home page -->
+    <a href="./" class="cytkit-brand">
+      <img src="./assets/web_logo.jpg" alt="Cytkit" class="cytkit-logo" style="padding-right:20px"> Cytkit Build Instructions
+    </a>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="cytkit-menu-toggle" type="button"
+            aria-label="Toggle navigation" aria-expanded="false"
+            aria-controls="cytkit-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Right-aligned links -->
+    <nav id="cytkit-nav" class="cytkit-nav">
+      <a href="https://cytkit.com">Cytkit Home</a>
+      <a href="https://github.com/Cytkit/Cytkit" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://cytkit.com/contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<style>
+  /* --- Neutralise GitBuilding's default header wrapper --- */
+  header.site-header {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  header.site-header > .wrapper.header-wrapper {
+    display: block !important;      /* undo any centring flex */
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* --- Our header --- */
+  .cytkit-header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    font-size: 14pt;
+    font-weight: bolder;
+  }
+  .cytkit-header-inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   /* logo left, nav right */
+    gap: 1rem;
+  }
+
+  .cytkit-brand { display: flex; align-items: center; text-decoration: none; flex: 0 0 auto; }
+  .cytkit-logo  { height: 40px; width: auto; display: block; }
+
+  .cytkit-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex: 0 0 auto;                  /* don't stretch */
+    margin-left: auto;               /* belt-and-braces: push to right */
+  }
+  .cytkit-nav a {
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+  }
+  .cytkit-nav a:hover { color: #f1502f; }
+
+  .cytkit-menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .cytkit-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #333;
+    border-radius: 2px;
+  }
+
+  @media (max-width: 767.98px) {
+    .cytkit-menu-toggle { display: flex; margin-left: auto; }
+    .cytkit-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0.75rem 1rem;
+      gap: 0.75rem;
+      margin-left: 0;
+    }
+    .cytkit-nav.cytkit-nav-open { display: flex; }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.querySelector('.cytkit-menu-toggle');
+    var nav    = document.getElementById('cytkit-nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('cytkit-nav-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Cytkit
+    </a>
+</li>
+<li id="nav-search" :class="focused && searchTerm.length > 0 ? 'search-result-popout' : 'search'" v-scope v-on:vue:mounted="mounted('./')">
+  <input
+    type="text"
+    placeholder="Search..."
+    v-on:input="search($event.target.value)"
+    v-on:keypress="handleKeyPress"
+    v-on:keyup.esc="$event.target.blur()"
+    v-on:focus="handleFocus"
+    v-on:blur="handleBlur"
+    :value="searchTerm" />
+    <div class="search-results" v-if="focused && searchTerm.length > 0">
+        <div v-if="searchResults.length > 0">Results:</div>
+        <div v-if="searchResults.length === 0">No results.</div>
+        <template v-for="(result, index) in searchResults">
+            <li>
+                <a class="search-result" :href="`./${result.path}.html`">
+               <span v-for="crumb in result.breadCrumbs.slice(0, -1)">
+                ${crumb + ' > '}
+                </span>
+               ${result.title || result.breadCrumbs[result.breadCrumbs.length - 1]}
+                <p>
+                    <span v-for="node in result.highlightChars" :class="node.mark ? 'highlight' : ''" >${node.chars}</span>
+                </p>
+                </a>
+            </li>
+        </template>
+    </div>
+</li>
+<li class="not-active">
+    <a class="not-active" href="./index_BOM.html">
+        Bill of Materials
+    </a>
+    </li>
+<li class="active">
+    <a class="active" href="./print_parts.html">
+        Print the mechanical parts
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./source_parts.html">
+        Source the optical, electronic, fluidic and mechanical components
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./assemble.html">
+        Assemble the mechanics
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./assemble_fluidics.html">
+        Assemble the fluidics
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./assemble_optics.html">
+        Assemble the optics
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./electronics1s1f.html">
+        Electronics: Cytkit configuration 1S-1F
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./electronics2s14f.html">
+        Electronics: Cytkit configuration 2S-14F
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./software.html">
+        Install and run the software
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./coarse_alignment.html">
+        Coarse alignment
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./fine_alignment.html">
+        Fine alignment
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./test_cytometer.html">
+        Test your Cytkit cytometer
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="print-the-mechanical-parts">Print the mechanical parts</h1>
+<p>Almost all the mechanical parts of the Cytkit are 3D printed, which you can do yourself from the STL files provided in the repo. Most parts require a consumer-grade FDM 3D printer with a 220x220mm print bed. A few parts however require a resin printer, for fine detail and fluidic sealing. </p>
+<div class="info-block">
+<p>A couple of days of 3D printing is required to build a Cytkit, and both an FDM and a resin printer. We intend to supply full kits shortly to make it easier to get started with Cytkit.</p>
+</div>
+<p><img alt="All printed parts" src="images/build photos/20260530_112224 all printed parts.jpg" title="" /></p>
+<h1 id="fdm-parts">FDM parts</h1>
+<h2 id="matt-black-pla-parts">Matt black PLA parts</h2>
+<p>The following parts should be printed in matt black PLA. Their blackness is important for absorption of stray light. Their rigidity is important to keep a fixed alignment. Any PLA variant that is rigid and very matt will do, e.g. Ultra PLA.</p>
+<ol>
+<li><a href="printed/main_body.html">Main body</a></li>
+<li><a href="printed/base.html">Base</a></li>
+<li><a href="printed/laser_holder.html">Laser holder</a></li>
+<li><a href="printed/holder_sipm_board.html" title="">Holder SiPM board</a></li>
+</ol>
+<p>For the Cytkit 1S-1F configuration:</p>
+<ol>
+<li><a href="printed/fluorescence_compartment_cap_pmt.html">Fluorescence compartment cap for PMT</a></li>
+<li><a href="printed/Amplified_PD_holder.html">Amplified PD holder</a></li>
+<li><a href="printed/PMT_mount_base.html" title="">PMT mount base</a></li>
+<li><a href="printed/PMT_mount.html" title="">PMT mount</a></li>
+<li><a href="printed/Cover_with_cable_holes.html">Cover (with cable holes)</a></li>
+</ol>
+<p>For the Cytkit 2S-14F configuration:</p>
+<ol>
+<li><a href="printed/fluorecence_compartment_cap.html">Fluorescence compartment cap</a></li>
+<li><a href="printed/pd_holder_h.html">PD board holder (h-adjust)</a></li>
+<li><a href="printed/fsc_v_slit.html">FSC v-slit 0.4mm</a></li>
+<li><a href="printed/pd_board_holder_v.html">PD board holder (v-adjust h-slit)</a></li>
+<li><a href="printed/nd_filter_holder.html" title="">ND filter holder for FSC</a></li>
+<li><a href="printed/holder_sipm_board.html">Holder SiPM board</a> (print an additional one to the one listed above)</li>
+<li><a href="printed/cover_with_optics_diagram.html">Cover (with optics diagram)</a></li>
+<li><a href="printed/cable_stay_bar.html">Cable stay bar</a></li>
+</ol>
+<div class="info-block">
+<p>Note that the Cover (with optics diagram) can be printed with a couple of external layers in a different colour, for decoration and for better contrast in visualising the optics diagram.</p>
+</div>
+<h2 id="black-pla-parts">Black PLA+ parts</h2>
+<p>The following parts should also be rigid and black, but require a bit more flexibility to hold optics firmly or allow flexural degrees of freedom. Therefore PLA+ is recommended.</p>
+<ol>
+<li><a href="printed/foc_lens_holder.html" title="">Focusing lens holder</a></li>
+<li><a href="printed/condensing_lens_holder.html" title="">Condensing lens holder</a></li>
+<li><a href="printed/correction_cyl_lens_holder.html" title="">Correction cylindrical lens holder</a></li>
+<li><a href="printed/camera_mount_v_adjust.html">Camera mount v-adjust</a></li>
+<li><a href="printed/coloured_glass_filter_holder.html">Circular filter holder (26mm diameter)</a></li>
+<li><a href="printed/grating_holder.html" title="">Grating holder</a></li>
+<li><a href="printed/spectrum_focus_lens_holder.html" title="">Spectrum focusing lens holder</a></li>
+<li><a href="printed/led_holder_fl_ssc_test.html">LED holder for fluorescence and SSC testing</a></li>
+<li><a href="printed/ssc_focus_lens_holder.html" title="">SSC focusing lens holder</a></li>
+</ol>
+<p>Since a variety of filter sizes are available from optics suppliers as stock items, we also provide a set of alternative size holders:</p>
+<ol>
+<li><a href="printed/circular_filter_holder_34mm_diameter.html" title="">Circular filter holder (34mm diameter)</a></li>
+<li><a href="printed/circular_filter_holder_25mm_diameter.html" title="">Circular filter holder (25mm diameter)</a></li>
+<li><a href="printed/circular_filter_holder_15mm_diameter.html" title="">Circular filter holder (15mm diameter)</a></li>
+<li><a href="printed/rectangular_filter_holder.html" title="">Rectangular filter holder (25.5x26mm)</a></li>
+</ol>
+<h2 id="white-pla-parts">White PLA parts</h2>
+<p>The following part must be printed in white as it is a tool for seeing the spectrum in coarse alignment:</p>
+<ol>
+<li><a href="printed/fl_screen.html">FL screen</a></li>
+</ol>
+<h2 id="any-colour-you-like-parts-pla-recommended">Any-colour-you-like parts (PLA+ recommended)</h2>
+<p>The following parts do not interfere with the optics, and therefore can be printed in any colour you like. PLA+ is recommended for toughness, ridigity and accuracy.</p>
+<ol>
+<li><a href="printed/sample_loader.html">Sample loader</a></li>
+<li><a href="printed/sample_loader_range_limiter.html">Sample loader range limiter</a></li>
+<li><a href="printed/sample_pump.html">Sample pump holder</a></li>
+</ol>
+<p>For the Cytkit 1S-1F configuration:</p>
+<ol>
+<li><a href="printed/front_panel_logo.html">Front panel logo</a></li>
+</ol>
+<h2 id="tough-parts-petg-recommended">Tough parts (PETG recommended)</h2>
+<p>The following parts can be printed in any colour. PETG is recommended for toughness and durability.</p>
+<ol>
+<li><a href="printed/stand.html">Stand</a></li>
+<li><a href="printed/fluidics_cart.html">Fluidics cart</a></li>
+<li><a href="printed/rear_panel_cover.html">Rear panel cover</a></li>
+</ol>
+<h2 id="flexible-parts-tpu-recommended">Flexible parts (TPU recommended)</h2>
+<p>The following parts can be printed in any colour. TPU is recommended to absorb noise and vibration.</p>
+<ol>
+<li><a href="printed/sheath_pump_holder.html">Sheath pump holder</a></li>
+<li><a href="printed/fan_holder.html">Fan holder</a></li>
+</ol>
+<h1 id="resin-parts">Resin parts</h1>
+<p>The following parts should all be printed using a resin printer (e.g. an LCD printer) in black resin (e.g. ABS-like black resin). The resin print has much higher resolution than FDM and allows proper sealing of fluidic parts as well as accurate printing of fine threads.</p>
+<ol>
+<li><a href="printed/sheath_chamber.html">Sheath chamber</a></li>
+<li><a href="printed/lock_nut.html" title="">Laser collimating lens lock nut</a></li>
+<li><a href="printed/lock_nut_tool_short.html">Laser collimating lens adjustment tool (short)</a></li>
+<li><a href="printed/lock_nut_tool_long.html" title="">Laser collimating lens adjustment tool (long)</a></li>
+<li><a href="printed/camera_tube_lens.html">Camera tube lens</a></li>
+</ol>
+<!-- GitBuilding Nav -->
+<hr />
+<p><a href="index_BOM.html">Previous page</a> | <a href="source_parts.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="doc-info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="license">Cytkit is released under <a href="license.html">CERN-OHL-S-2.0</a>.</p>
+
+    </div>
+</footer></body>
+</html>

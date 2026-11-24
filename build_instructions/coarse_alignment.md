@@ -85,7 +85,7 @@ Adjust laser focus theta so that the fluorescent light emission enters the detec
 
 To see the emission spectrum clearly, hold a white screen (e.g. paper) in front of the fluorescence detectors as shown.
 
-<video src="images/build photos/alignment/fluorescein spectrum.mp4" controls width="640"></video>
+<video src="assets/fluorescein spectrum.mp4" controls width="640"></video>
 
 Wash out well with sheath fluid before moving on, as residual fluorescein creates a lot of background fluorescence. Load sheath fluid or water onto the SIP, then flush:
 

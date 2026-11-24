@@ -1,5 +1,5 @@
-Title: The Cytkit Instrument
-Affiliation: The Cytkit Project
+Title: Cytkit
+Affiliation: The Open-Source Spectral Cytometer
 CustomCategories:
   electronics1S1F:
     DisplayName: Electronic parts for Cytkit 1S-1F configuration
@@ -34,7 +34,6 @@ CustomCategories:
   test_materials:
     DisplayName: Test Materials
     Reuse: false
-Email: hello@cytkit.com
 HoverColor: '#555555'
 License: CERN-OHL-S-2.0
 PrimaryColor: '#f1502f'

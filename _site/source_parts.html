@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cytkit</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./static/Logo/favicon.ico" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-16x16.png" sizes="16x16" />
+
+    <link href="./static/base-style.css" rel="stylesheet">
+    <link href="./static/site-style.css" rel="stylesheet">
+                <style>
+  :root {
+    --primary-color: #f1502f;
+  }
+</style>
+<style>
+  :root {
+    --secondary-color: #cccccc;
+  }
+</style>
+<style>
+  :root {
+    --hover-color: #555555;
+}
+</style>
+    
+        <script type="text/javascript" src="./static/search.js" defer=""></script>
+    </head>
+<body>
+<header class="site-header">
+    <div class="wrapper header-wrapper" >
+        <header class="cytkit-header">
+  <div class="cytkit-header-inner">
+
+    <!-- Logo, links to home page -->
+    <a href="./" class="cytkit-brand">
+      <img src="./assets/web_logo.jpg" alt="Cytkit" class="cytkit-logo" style="padding-right:20px"> Cytkit Build Instructions
+    </a>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="cytkit-menu-toggle" type="button"
+            aria-label="Toggle navigation" aria-expanded="false"
+            aria-controls="cytkit-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Right-aligned links -->
+    <nav id="cytkit-nav" class="cytkit-nav">
+      <a href="https://cytkit.com">Cytkit Home</a>
+      <a href="https://github.com/Cytkit/Cytkit" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://cytkit.com/contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<style>
+  /* --- Neutralise GitBuilding's default header wrapper --- */
+  header.site-header {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  header.site-header > .wrapper.header-wrapper {
+    display: block !important;      /* undo any centring flex */
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* --- Our header --- */
+  .cytkit-header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+    font-size: 14pt;
+    font-weight: bolder;
+  }
+  .cytkit-header-inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   /* logo left, nav right */
+    gap: 1rem;
+  }
+
+  .cytkit-brand { display: flex; align-items: center; text-decoration: none; flex: 0 0 auto; }
+  .cytkit-logo  { height: 40px; width: auto; display: block; }
+
+  .cytkit-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex: 0 0 auto;                  /* don't stretch */
+    margin-left: auto;               /* belt-and-braces: push to right */
+  }
+  .cytkit-nav a {
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+  }
+  .cytkit-nav a:hover { color: #f1502f; }
+
+  .cytkit-menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .cytkit-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #333;
+    border-radius: 2px;
+  }
+
+  @media (max-width: 767.98px) {
+    .cytkit-menu-toggle { display: flex; margin-left: auto; }
+    .cytkit-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0.75rem 1rem;
+      gap: 0.75rem;
+      margin-left: 0;
+    }
+    .cytkit-nav.cytkit-nav-open { display: flex; }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.querySelector('.cytkit-menu-toggle');
+    var nav    = document.getElementById('cytkit-nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('cytkit-nav-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Cytkit
+    </a>
+</li>
+<li id="nav-search" :class="focused && searchTerm.length > 0 ? 'search-result-popout' : 'search'" v-scope v-on:vue:mounted="mounted('./')">
+  <input
+    type="text"
+    placeholder="Search..."
+    v-on:input="search($event.target.value)"
+    v-on:keypress="handleKeyPress"
+    v-on:keyup.esc="$event.target.blur()"
+    v-on:focus="handleFocus"
+    v-on:blur="handleBlur"
+    :value="searchTerm" />
+    <div class="search-results" v-if="focused && searchTerm.length > 0">
+        <div v-if="searchResults.length > 0">Results:</div>
+        <div v-if="searchResults.length === 0">No results.</div>
+        <template v-for="(result, index) in searchResults">
+            <li>
+                <a class="search-result" :href="`./${result.path}.html`">
+               <span v-for="crumb in result.breadCrumbs.slice(0, -1)">
+                ${crumb + ' > '}
+                </span>
+               ${result.title || result.breadCrumbs[result.breadCrumbs.length - 1]}
+                <p>
+                    <span v-for="node in result.highlightChars" :class="node.mark ? 'highlight' : ''" >${node.chars}</span>
+                </p>
+                </a>
+            </li>
+        </template>
+    </div>
+</li>
+<li class="not-active">
+    <a class="not-active" href="./index_BOM.html">
+        Bill of Materials
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./print_parts.html">
+        Print the mechanical parts
+    </a>
+    </li>
+<li class="active">
+    <a class="active" href="./source_parts.html">
+        Source the optical, electronic, fluidic and mechanical components
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./assemble.html">
+        Assemble the mechanics
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./assemble_fluidics.html">
+        Assemble the fluidics
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./assemble_optics.html">
+        Assemble the optics
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./electronics1s1f.html">
+        Electronics: Cytkit configuration 1S-1F
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./electronics2s14f.html">
+        Electronics: Cytkit configuration 2S-14F
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./software.html">
+        Install and run the software
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./coarse_alignment.html">
+        Coarse alignment
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./fine_alignment.html">
+        Fine alignment
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./test_cytometer.html">
+        Test your Cytkit cytometer
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="source-the-optical-electronic-fluidic-and-mechanical-components">Source the optical, electronic, fluidic and mechanical components</h1>
+<p>Apart from the 3D printed parts, Cytkit requires a set of specialised components: optical, electronic and fluidic, as well as a few non-printed mechanical components. These are listed below along with recommended sources.</p>
+<div class="gallery-thumb">
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build photos/20260530_115248 optical components.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build photos/20260530_113025 electronic components.jpg" alt="" />
+    <img onmouseover="getElementById('gallery-show0').src=this.src" src="images/build photos/20260530_120205 fluidic components.jpg" alt="" />
+</div>
+<div class="gallery-show"><img id="gallery-show0" src="images/build photos/20260530_115248 optical components.jpg" alt=""/></div>
+<div class="info-block">
+<p>We intend to supply full kits shortly, with all recommended components, to make it easier to get started with Cytkit.</p>
+</div>
+<h2 id="source-the-safety-equipment">Source the safety equipment</h2>
+<ol>
+<li><a href="safety/laser_safety_glasses.html">Laser safety glasses</a></li>
+</ol>
+<h2 id="source-the-optical-components">Source the optical components</h2>
+<ol>
+<li><a href="optical/laser_focus_lens_spherical.html" title="">Laser focus lens spherical</a></li>
+<li><a href="optical/laser_focus_lens_cylindrical.html" title="">Laser focus lens cylindrical</a></li>
+<li><a href="optical/blazed_reflection_grating.html" title="">Blazed reflection grating</a></li>
+<li><a href="optical/nd_filter.html" title="">Neutral density filter</a></li>
+<li><a href="optical/dichroic_longpass_45.html" title="">Dichroic longpass filter at 45 degrees (beamsplitter)</a></li>
+<li><a href="optical/dichroic_longpass.html" title="">Dichroic longpass filter at 0 degrees</a></li>
+<li><a href="optical/coloured_glass_longpass.html" title="">Coloured glass longpass filter</a></li>
+<li><a href="optical/condensing_lens.html" title="">Condensing lens</a></li>
+<li><a href="optical/spectrum_focusing_lens.html" title="">Spectrum focusing lens</a></li>
+<li><a href="optical/ssc_focusing_lens.html" title="">SSC focusing lens</a></li>
+<li>2x <a href="optical/F7D8_aspherical_lens.html" title="">F7D8 aspherical lens</a></li>
+<li><a href="optical/laser_module.html" title="">488 nm laser module</a></li>
+<li><a href="optical/laser_collimating_lens.html" title="">Laser collimating lens</a></li>
+<li><a href="optical/laser_heatsink.html" title="">Laser heatsink</a></li>
+<li><a href="optical/band_pass_dichroic.html" title="">Band pass dichroic filter</a></li>
+<li><a href="optical/cylindrical_correction_lens.html" title="">Cylindrical correction lens</a></li>
+<li><a href="optical/laser_blocking_filter.html" title="">5 mm laser blocking filter</a></li>
+</ol>
+<h2 id="source-the-fluidic-components">Source the fluidic components</h2>
+<ol>
+<li><a href="fluidic/sheath_pump.html" title="">Vacuum pump for sheath</a></li>
+<li><a href="fluidic/sample_pump.html" title="">Peristaltic pump for sample</a></li>
+<li><a href="fluidic/bottom_of_bottle_filter.html" title="">Bottom-of-bottle filter</a></li>
+<li>2 m <a href="fluidic/silicone_tubing_1mm.html">Silicone tubing 2 mm OD 1 mm ID</a></li>
+<li>1 m <a href="fluidic/silicone_tubing_1.6mm.html">Silicone tubing 3.2 mm OD 1.6 mm ID</a></li>
+<li>1 m <a href="fluidic/silicone_tubing_4mm.html">Silicone tubing 6 mm OD 4 mm ID</a></li>
+<li><a href="fluidic/tube_barb_union1.6x2.4.html" title="">Tube barb union 1.6x2.4</a></li>
+<li><a href="fluidic/tube_barb_union1.6x3.2.html" title="">Tube barb union 1.6x3.2</a></li>
+<li><a href="fluidic/tube_barb_union2.4x6.4.html" title="">Tube barb union 2.4x6.4</a></li>
+<li><a href="fluidic/cuvette.html">Quartz cuvette or thick-walled capillary</a></li>
+<li><a href="fluidic/pressure_resistant_bottle.html">Pressure-resistant bottle</a></li>
+<li><a href="fluidic/peek_tubing.html">PEEK tubing 1.6mm OD 0.25mm ID</a></li>
+<li><a href="fluidic/o-rings.html">Nitrile black O-rings ID 1mm CS 1mm</a></li>
+</ol>
+<h2 id="source-the-electronic-components">Source the electronic components</h2>
+<p>According to the configuration you are building:</p>
+<h3 id="for-the-cytkit-1s-1f-configuration">For the Cytkit 1S-1F configuration:</h3>
+<ol>
+<li><a href="components/thorlabs_pda10.html" title="">Amplified photodiode (Thorlabs PDA10)</a></li>
+<li><a href="components/hamamatsu_H10732.html" title="">Photomultiplier tube module (Hamamatsu H10732)</a></li>
+<li><a href="components/picoscope.html" title="">USB oscilloscope (Picoscope 5000 series)</a></li>
+<li><a href="electronic/vacuum_pump_controller.html" title="">Vacuum pump controller board</a></li>
+<li><a href="electronic/stepper_controller.html" title="">Stepper motor controller board</a></li>
+<li><a href="electronic/bnc_cable.html" title="">BNC (Male) to BNC (Male) cable, 1 m</a></li>
+<li><a href="electronic/sma_bnc_adapter.html" title="">SMA (Female) to BNC (Male) adapter</a></li>
+<li><a href="electronic/linear_power_supply.html">Linear Power Supply</a></li>
+<li><a href="electronic/laboratory_power_supply.html">Laboratory Power Supply</a></li>
+<li><a href="electronic/camera.html" title="">USB camera module</a></li>
+<li>(Optional) <a href="electronic/f3_led.html" title="">3mm F3 round white LED</a></li>
+<li>(Optional) <a href="electronic/16k_resistor.html" title="">16k resistor</a></li>
+</ol>
+<h3 id="for-the-cytkit-2s-14f-configuration">For the Cytkit 2S-14F configuration:</h3>
+<div class="info-block">
+<p>All electronic components are available in the Astute Devices Cytometry Electronics Set CYKIT-E-1, or in the Cytkit Full Kit CYKIT-K-1, anticipated to launch Q4 2026. Further details coming soon!</p>
+</div>
+<ol>
+<li><a href="electronic/cytometer_control_board.html">Cytometer control board</a></li>
+<li><a href="electronic/photodiode_board.html">Photodiode board</a> x2</li>
+<li><a href="electronic/sipm_array_board.html">SiPM array board</a></li>
+<li><a href="electronic/pump_connector_board.html">Pump connector board</a></li>
+<li><a href="electronic/interlock_switches.html">Interlock switches</a> x2</li>
+<li><a href="electronic/oled_display.html">OLED display</a></li>
+<li><a href="electronic/blower_fan.html">Blower fan</a></li>
+<li><a href="electronic/camera.html" title="">USB camera module</a></li>
+<li><a href="electronic/ribbon_connectors.html">Ribbon connector set</a></li>
+<li><a href="electronic/36v_dc_power_supply.html">36V DC power supply</a></li>
+<li><a href="electronic/usb_a_to_b_cable.html">USB A to USB B cable</a></li>
+</ol>
+<h2 id="source-the-mechanical-components">Source the mechanical components</h2>
+<ol>
+<li><a href="mechanical/screws/self_tapping_m3x25_hex_socket.html">M3 self-tapping hex socket cap screws 25 mm</a></li>
+<li><a href="mechanical/screws/self_tapping_m3x6_posi.html" title="">M3 self-tapping posi head screws 6 mm</a></li>
+<li><a href="mechanical/screws/self_tapping_m3x8_posi.html" title="">M3 self-tapping posi head screws 8 mm</a></li>
+<li><a href="mechanical/screws/self_tapping_m3x10_posi.html" title="">M3 self-tapping posi head screws 10 mm</a></li>
+<li><a href="mechanical/screws/self_tapping_m3x12_posi.html" title="">M3 self-tapping posi head screws 12 mm</a></li>
+<li><a href="mechanical/screws/self_tapping_m3x16_posi.html" title="">M3 self-tapping posi head screws 16 mm</a></li>
+<li><a href="mechanical/screws/self_tapping_m2.6x6_posi.html" title="">M2.6 self-tapping posi head screws 6 mm</a></li>
+<li><a href="mechanical/screws/m3_washers.html" title="">M3 washers</a></li>
+<li><a href="mechanical/springs_20x6x0.5mm.html">Stainless steel compression springs, 0.5 mm wire, 20 mm length, 6 mm diameter</a></li>
+<li><a href="mechanical/extension_springs_20x6x0.3mm.html" title="">Stainless steel extension springs, 0.3 mm wire, 20 mm length, 6 mm diameter</a></li>
+<li><a href="mechanical/m4_thumb_screws.html" title="">M4 thumb screws 10mm</a></li>
+<li><a href="mechanical/screws/m4x10_hex_socket.html" title="">M4 hex socket bolt 10mm</a></li>
+</ol>
+<h2 id="materials-for-alignment-and-testing">Materials for alignment and testing</h2>
+<p>It is recommended to obtain the following materials for alignment and testing.</p>
+<ol>
+<li><a href="test_materials/alignment_beads.html">Bright green fluorescent alignment beads</a></li>
+<li><a href="test_materials/spherotech8peak.html">Spherotech 3um 8-peak Rainbow Beads RCP-30-5A</a></li>
+<li><a href="test_materials/spherotech6peak.html">Spherotech 6um 6-peak Rainbow Beads RCP-60-5</a></li>
+<li><a href="test_materials/test_tube.html">5 mL flow cytometry test tubes</a></li>
+</ol>
+<!-- GitBuilding Nav -->
+<hr />
+<p><a href="print_parts.html">Previous page</a> | <a href="assemble.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="doc-info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="license">Cytkit is released under <a href="license.html">CERN-OHL-S-2.0</a>.</p>
+
+    </div>
+</footer></body>
+</html>

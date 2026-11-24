@@ -1,6 +1,8 @@
 # Fine alignment
 
-If you are building the Cytkit configuration 2S14F, fine alignment should be done with the instrument cover on (laser enclosed and interlock enabled).
+If you are building the Cytkit configuration 2S14F, fine alignment should be done with the [instrument cover](printed/cover_with_optics_diagram.md) on (laser enclosed and interlock enabled). The cover is secured with 4x [M4 Thumb Screws](mechanical/m4_thumb_screws.md){qty:4, cat:mechanics}.
+
+![](images/build photos/more photos/20260530_173735.jpg)
 
 If you are building the Cytkit configuration 1S1F, do not place the instrument cover yet, as it must be off to access the FSC alignment.
 
@@ -26,11 +28,11 @@ When the beads pass through the laser focus, they will emit an intense flash of 
 
 If coarse alignment was successful. In Honeychrome (View > Oscilloscope Viewer) you should see something like the following: a rising edge refreshing several times per second. If you do not, gradually increase your fluorescence detector's bias voltage, making sure that the baseline stays below 100 mV.
 
-<video src="images/build%20photos/alignment/Screencast%20from%202026-11-19%2012-27-01%20alignment%20beads%20after%20coarse%20alignment%20in%20honeychrome.webm" controls width="640"></video>
+<video src="assets/Screencast%20from%202026-11-19%2012-27-01%20alignment%20beads%20after%20coarse%20alignment%20in%20honeychrome.webm" controls width="640" type="video/webm"></video>
 
 For Cytkit 1S1F you can also do the same in the Picoscope software. 
 
-<video src="images/build photos/alignment/Screencast from 2026-11-19 12-25-37 alignment beads after coarse alignment in picoscope.webm" controls width="640"></video>
+<video src="assets/Screencast from 2026-11-19 12-25-37 alignment beads after coarse alignment in picoscope.webm" controls width="640"></video>
 
 If you don't see any signal like this, check the following:
 
@@ -53,7 +55,7 @@ While watching the oscilloscope, carefully adjust the following in order to make
 
 Your fluorescence peak should start to look like a clean Gaussian as shown below.
 
-<video src="images/build photos/alignment/Screencast from 2026-11-19 14-34-08 alignment beads after align fine fl.webm" controls width="640" type="video/mp4"></video>
+<video src="assets/Screencast from 2026-11-19 14-34-08 alignment beads after align fine fl.webm" controls width="640" type="video/mp4"></video>
 
 >i Tip: Make your adjustments carefully: before turning each lead screw, make a mental note of its position, so that you can return to it if you go to far and the signal disappears. 
 >i 
@@ -70,13 +72,15 @@ If FSC is not regular in height, check the following:
 - Do you have bubbles / outgassing in your sheath fluid? (Are there bubbles in the sheath input line? If so, leave the sheath overnight for the gas to equilibrate, or pre-warm the sheath to ~ 40 C to drive out excess gas, and let it cool before using.)
 - Do you have a clog / debris in your flow cell? Try flowing cytometry cleaning agents before flowing the beads again.
 
-<video src="images/build photos/alignment/Screencast from 2026-11-19 14-41-05 alignment beads after align fine fsc trig fl.webm" controls width="640"></video>
+<video src="assets/Screencast from 2026-11-19 14-41-05 alignment beads after align fine fsc trig fl.webm" controls width="640"></video>
 
 You should now be able to trigger on FSC (Instrument Settings > Peak Detection Channel). Set threshold to 150 mV for Cytkit 1S1F or 50 mV for Cytkit 2S14F.
 
-<video src="images/build photos/alignment/Screencast from 2026-11-19 14-45-04 alignment beads after align fine fsc.webm" controls width="640"></video>
+<video src="assets/Screencast from 2026-11-19 14-45-04 alignment beads after align fine fsc.webm" controls width="640"></video>
 
-If you are building the Cytkit configuration 1S1F, you may now place the instrument cover. (You will have to disconnect the FSC leads and tuck away any other leads before placing the cover on. This is not necessary for the Cytkit configuration 2S14F where the leads are all enclosed.)
+If you are building the Cytkit configuration 1S1F, you may now place the [instrument cover](printed/Cover_with_cable_holes.md). (You will have to disconnect the FSC leads and tuck away any other leads before placing the cover on. This is not necessary for the Cytkit configuration 2S14F where the leads are all enclosed.)
+
+
 
 ## Align SSC collection {pagestep}
 
